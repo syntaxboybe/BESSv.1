@@ -1,8 +1,8 @@
-## ⚒ LIST OF FUNCTIONALITIES:
+# ⚒ LIST OF FUNCTIONALITIES:
 
 
 
-## 👨‍🔧 SYSTEM ADMIN (system personnel/secretary)
+# 👨‍🔧 SYSTEM ADMIN (system personnel/secretary)
 
 ⚙️ view dashboard
 
@@ -20,7 +20,7 @@
 
 
 
-## 👫 RESIDENT (Citizen)
+# 👫 RESIDENT (Citizen)
 
 ⚙️ use account
 
@@ -35,7 +35,7 @@
 
 
 
-## 👩‍⚖️ STAFF (secretary/staff-available)
+# 👩‍⚖️ STAFF (secretary/staff-available)
 
 ⚙️ accept requests such as certification and blotter
 
@@ -59,7 +59,7 @@
 
 
 
-## 👨‍⚖️ ZONE PERSONNEL (Zone Leader)
+# 👨‍⚖️ ZONE PERSONNEL (Zone Leader)
 
 ⚙️ view incoming request
 
