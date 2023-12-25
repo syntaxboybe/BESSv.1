@@ -27,10 +27,10 @@
                     <label>Type of Business:</label>
                     <select name="ddl_edit_tob" class="form-control input-sm">
                         <option value="'.$row['typeOfBusiness'].'" selected>'.$row['typeOfBusiness'].'</option>
-                        <option value="Option 1">Store</option>
-                        <option value="Option 2">Computer Shop</option>
-                        <option value="Option 3">Hardware Store</option>
-                        <option value="Option 4">Commercial</option>
+                        <option value="Store ">Store</option>
+                        <option value="Computer Shop ">Computer Shop</option>
+                        <option value="Hardware Store ">Hardware Store</option>
+                        <option value="Commercial ">Commercial</option>
                     </select>
                 </div>
                 <div class="form-group">
