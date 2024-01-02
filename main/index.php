@@ -17,12 +17,81 @@
     <link href="../css/select2.css" rel="stylesheet" type="text/css" />
     <script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
     <style>
-    .no-print{
-        display:none;
-    }
-    .dataTables_filter input { 
-    padding-top: 20px;
-    padding-bottom: 20px;}
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+
+  }
+
+  .carousel {
+    flex: 1;
+    height: 320px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    
+  }
+
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel .prev,
+  .carousel .next {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: 0.3s;
+    
+  }
+
+  .carousel .prev {
+    left: 20px;
+  }
+
+  .carousel .next {
+    right: 20px;
+  }
+
+  .text {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .text h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+  }
     </style>
 </head>
 <body>
@@ -52,44 +121,37 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="wrapper row-offcanvas row-offcanvas-left">
-<div class="container-fluid">
-<table id="table" class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Barangay</th>
-            <th>Zone</th>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>Former Address</th>
-            <th style="width: 5% !important;">Option</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php
-        include "../pages/connection.php";
-        $squery = mysqli_query($con, "SELECT *,CONCAT(lname, ', ', fname, ' ', mname) as cname FROM tblresident");
-        while($row = mysqli_fetch_array($squery))
-        {
-            echo '
-            <tr>
-                <td style="width:70px;"><image src="../pages/resident/image/'.basename($row['image']).'" style="width:60px;height:60px;"/></td>
-                <td>'.$row['cname'].'</td>
-                <td>'.$row['barangay'].'</td>
-                <td>'.$row['zone'].'</td>
-                <td>'.$row['age'].'</td>
-                <td>'.$row['gender'].'</td>
-                <td>'.$row['formerAddress'].'</td>
-                <td><button class="btn btn-primary btn-sm" data-target="#detailsModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i> Details</button></td>
-            </tr>
-            ';
-            include "detailsModal.php";
-        }
-        ?>
+<div class="container" style="margin-top: 20px;align-items: center;margin-bottom: 70px;">
+        <div class="row" style="align-items: center;">
+            <div class="col-md-6">
+                <div class="carousel slide" data-ride="carousel" id="carousel-1" style="background-size: cover;">
+                    <div class="carousel-inner">
+                        <div class="item active"><img class="w-100 d-block" src="../img/homepage.jpg" alt="Slide Image"></div>
+                        <div class="item"><img class="w-100 d-block" src="../img/citizen_charter.png" alt="Slide Image"></div>
+                        <div class="item"><img class="w-100 d-block" src="../img/bg.jpg" alt="Slide Image"></div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-1" data-slide-to="1"></li>
+                        <li data-target="#carousel-1" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-6 text-justify">
+                <p><b> <center>VISION</center></b></p> 𝘈𝘯 𝘦𝘮𝘱𝘰𝘸𝘦𝘳𝘦𝘥 𝘢𝘯𝘥 𝘩𝘦𝘢𝘭𝘵𝘩𝘺 𝘕𝘢𝘢𝘸𝘢𝘯 𝘪𝘯 𝘢 𝘨𝘭𝘰𝘣𝘢𝘭𝘭𝘺-𝘤𝘰𝘮𝘱𝘦𝘵𝘪𝘵𝘪𝘷𝘦, 𝘦𝘤𝘰𝘭𝘰𝘨𝘪𝘤𝘢𝘭𝘭𝘺 𝘣𝘢𝘭𝘢𝘯𝘤𝘦𝘥 𝘢𝘯𝘥 𝘱𝘦𝘢𝘤𝘦𝘧𝘶𝘭 𝘔𝘪𝘴𝘢𝘮𝘪𝘴 𝘖𝘳𝘪𝘦𝘯𝘵𝘢𝘭 𝘶𝘯𝘥𝘦𝘳 𝘢 𝘳𝘦𝘴𝘱𝘰𝘯𝘴𝘪𝘷𝘦 𝘢𝘯𝘥 𝘢𝘤𝘤𝘰𝘶𝘯𝘵𝘢𝘣𝘭𝘦 𝘨𝘰𝘷𝘦𝘳𝘯𝘢𝘯𝘤𝘦.
+                <br>
+                <br>
+                <br>
+                <p><b><center>MISSION</center></b></p> 𝘞𝘦 𝘴𝘩𝘢𝘭𝘭 𝘴𝘶𝘴𝘵𝘢𝘪𝘯 𝘰𝘶𝘳 𝘥𝘦𝘭𝘪𝘷𝘦𝘳𝘺 𝘰𝘧 𝘴𝘦𝘳𝘷𝘪𝘤𝘦𝘴 𝘵𝘰 𝘵𝘩𝘦 𝘧𝘶𝘭𝘭𝘦𝘴𝘵 𝘰𝘧 𝘰𝘶𝘳 𝘢𝘣𝘪𝘭𝘪𝘵𝘪𝘦𝘴, 𝘩𝘢𝘳𝘯𝘦𝘴𝘴𝘪𝘯𝘨 𝘰𝘶𝘳 𝘱𝘰𝘵𝘦𝘯𝘵𝘪𝘢𝘭𝘴, 𝘢𝘯𝘥 𝘣𝘶𝘪𝘭𝘥𝘪𝘯𝘨 𝘮𝘰𝘳𝘦 𝘮𝘦𝘢𝘯𝘪𝘯𝘨𝘧𝘶𝘭 𝘵𝘦𝘢𝘮𝘸𝘰𝘳𝘬; 𝘞𝘦 𝘸𝘪𝘭𝘭 𝘩𝘰𝘭𝘥 𝘢𝘯𝘥 𝘱𝘳𝘰𝘮𝘰𝘵𝘦 𝘢𝘵 𝘢𝘭𝘭 𝘵𝘪𝘮𝘦𝘴 𝘵𝘩𝘦 𝘱𝘳𝘪𝘯𝘤𝘪𝘱𝘭𝘦𝘴 𝘢𝘯𝘥 𝘱𝘰𝘭𝘪𝘤𝘪𝘦𝘴 𝘰𝘧 𝘵𝘩𝘦 𝘔𝘶𝘯𝘪𝘤𝘪𝘱𝘢𝘭 𝘎𝘰𝘷𝘦𝘳𝘯𝘮𝘦𝘯𝘵; 𝘢𝘯𝘥 𝘊𝘰𝘨𝘯𝘪𝘻𝘢𝘯𝘵 𝘰𝘧 𝘰𝘶𝘳 𝘢𝘷𝘰𝘸𝘦𝘥 𝘱𝘶𝘳𝘱𝘰𝘴𝘦, 𝘸𝘦 𝘤𝘰𝘮𝘮𝘪𝘵 𝘰𝘶𝘳𝘴𝘦𝘭𝘷𝘦𝘴 𝘵𝘰 𝘮𝘢𝘬𝘦 𝘔𝘪𝘴𝘢𝘮𝘪𝘴 𝘖𝘳𝘪𝘦𝘯𝘵𝘢𝘭 𝘢 𝘤𝘩𝘢𝘭𝘭𝘦𝘯𝘨𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘢𝘥𝘷𝘦𝘯𝘵𝘶𝘳𝘰𝘶𝘴, 𝘢 𝘩𝘢𝘷𝘦𝘯 𝘧𝘰𝘳 𝘵𝘩𝘦 𝘵𝘳𝘢𝘷𝘦𝘭𝘦𝘳𝘴, 𝘢𝘯𝘥 𝘢 𝘳𝘦𝘢𝘭 𝘩𝘰𝘮𝘦 𝘧𝘰𝘳 𝘵𝘩𝘦 𝘔𝘪𝘴𝘢𝘮𝘪𝘴𝘯𝘰𝘯.
+                <br>
+                <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>© 𝟐𝟎𝟐𝟑-𝟐𝟎𝟐𝟒 𝘉𝘢𝘳𝘢𝘯𝘨𝘢𝘺 𝘌-𝘴𝘦𝘳𝘷𝘪𝘤𝘦 𝘚𝘺𝘴𝘵𝘦𝘮</footer>
     </tbody>
-</table>
 
 </div>
 </div>
@@ -113,19 +175,6 @@
 <!-- AdminLTE App -->
 <script src="../js/AdminLTE/app.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-  $(function() {
-      $("#table").dataTable({
-         "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 0,5 ] } ],"aaSorting": [],
-         "dom":' <"search"f><"top"l>rt<"bottom"ip><"clear">'
-      });
-  });
-
-  $(document).ready(function () {             
-  $('.dataTables_filterinput[type="search"]').css(
-     {'width':'350px','display':'inline-block'}
-  );
-});
 </script>
 
 
