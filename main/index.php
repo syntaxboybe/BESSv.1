@@ -39,7 +39,8 @@
     margin: 0 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #333;
+    transition: 0.3s;
+    background-color: #f5f5f5;
     
   }
 
