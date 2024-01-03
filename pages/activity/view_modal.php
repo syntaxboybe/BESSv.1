@@ -14,7 +14,7 @@
             while($row1 = mysqli_fetch_array($p)){
                 echo '<div class="col-md-4">
                     <input type="checkbox" name="chk_deletephoto[]" class="chk_deletephoto" value="'.$row1['id'].'" />
-                    <image src="photo/'.basename($row1['filename']).'" style="width:170px;height:170px;"/>
+                    <image src="photo/'.basename($row1['filename']).'" style="width: 500px;height: 500px;"/>
                 </div>';
             }
         

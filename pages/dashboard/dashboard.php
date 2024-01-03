@@ -79,10 +79,68 @@
 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Male</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblresident where gender = 'Male'");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Female</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblresident where gender = 'Female'");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Senior Citizen</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * FROM tblresident WHERE age >= 60");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                            
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+                                
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
                                     <a href="../clearance/clearance.php"><span class="info-box-icon bg-aqua"><i class="fa fa-file"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Total Clearance</span>
+                                      <span class="info-box-text">Requested Clearance</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblclearance where status = 'Approved' ");
@@ -101,7 +159,7 @@
                                     <a href="../permit/permit.php"><span class="info-box-icon bg-aqua"><i class="fa fa-file"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Total Permit</span>
+                                      <span class="info-box-text">Requested Permit</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblpermit where status = 'Approved' ");
@@ -120,7 +178,7 @@
                                     <a href="../blotter/blotter.php"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Total Blotter</span>
+                                      <span class="info-box-text">Complained Blotter</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblblotter");

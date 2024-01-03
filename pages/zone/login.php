@@ -11,10 +11,16 @@ session_start();
         <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
-
+        <style>
+            body {
+                background-image: url("img/blur-background09.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
     </head>
     <body class="skin-black">
-        <div class="container" style="margin-top:30px">
+        <div class="container" style="margin-top:150px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
             <div class="panel-heading" style="text-align:center;">

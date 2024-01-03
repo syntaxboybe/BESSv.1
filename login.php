@@ -15,9 +15,8 @@ session_start();
 
     </head>
     <body class="skin-black">
-    <body style="background-image: url({{ URL::asset('images/naa1bg.png') }}); background-repeat: no-repeat ; background-size: 100%">
 
-        <div class="container" style="margin-top:30px">
+        <div class="container" style="margin-top:150px">
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
             <div class="panel-heading" style="text-align:center;">
