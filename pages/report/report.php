@@ -36,14 +36,7 @@
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
-                        <!-- left column -->
-                            <div class="box">
-                                <div class="box-header">
-                                    <div style="padding:10px;">
-                                    <form action="export.php" method="post">
-                                        <button class="btn btn-primary btn-sm" type="submit" name="export"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export</button>  
-                                    </form>
-                                    </div>                            
+                        <!-- left column -->                         
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
                                 
