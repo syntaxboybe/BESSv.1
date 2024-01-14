@@ -12,7 +12,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Name:</label>
+                                    <label>Full Name:</label>
                                     <input name="txt_name" class="form-control input-sm" type="text" placeholder="Lastname, Firstname Middlename"/>
                                 </div>
                                 <div class="form-group">

@@ -21,7 +21,7 @@
                                     <label id="user_msg" style="color:#CC0000;" ></label>
                                 </div>
                                 <div class="form-group">
-                                    <label>Username:</label>
+                                    <label>Password:</label>
                                     <input name="txt_pass" class="form-control input-sm" type="password" placeholder="*******"/>
                                 </div>
                             </div>
