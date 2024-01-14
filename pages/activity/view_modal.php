@@ -8,7 +8,7 @@
         </div>
         <div class="modal-body">
         <input type="hidden" name="hidden_id" value="'.$row['id'].'">
-            <input type="checkbox" id="cbxMainphoto" /><label> Select All</label>
+            <input type="checkbox" id="cbxMainphoto" /><label>Activity Photo</label>
         <div class="row">';
             $p = mysqli_query($con,"SELECT * from tblactivityphoto where activityid = '".$row['id']."' ");
             while($row1 = mysqli_fetch_array($p)){
