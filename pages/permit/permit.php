@@ -28,7 +28,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Permit Clearance
+                        Permit Records
                     </h1>
                     
                 </section>
