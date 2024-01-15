@@ -28,7 +28,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Activity
+                        Activity Records
                     </h1>
                     
                 </section>
