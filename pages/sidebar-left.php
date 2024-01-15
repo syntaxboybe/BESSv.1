@@ -167,6 +167,16 @@
                                 </a>
                             </li>
                             <li>
+                            <a href="../indigency/indigency.php">
+                                <i class="fa fa-file"></i> <span>Indigency</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../residency/residency.php">
+                                <i class="fa fa-file"></i> <span>Residency</span>
+                            </a>
+                        </li>
+                            <li>
                                 <a href="../activity/activity.php">
                                     <i class="fa fa-calendar"></i> <span>Activity</span>
                                 </a>
