@@ -104,21 +104,13 @@
                                     <i class="fa fa-user"></i> <span>Barangay Officials</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="../household/household.php">
-                                    <i class="fa fa-home"></i> <span>Household</span>
-                                </a>
-                            </li>
+        
                             <li>
                                 <a href="../resident/resident.php">
                                     <i class="fa fa-users"></i> <span>Resident</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="../zone/zone.php">
-                                    <i class="fa fa-user"></i> <span>Zone Leader</span>
-                                </a>
-                            </li>
+                            
                             <li>
                                 <a href="../permit/permit.php">
                                     <i class="fa fa-file"></i> <span>Permit</span>
