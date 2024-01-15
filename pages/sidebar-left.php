@@ -50,17 +50,27 @@
                             </li>
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Permit</span>
+                                    <i class="fa fa-file"></i> <span>Permit Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../blotter/blotter.php">
-                                    <i class="fa fa-users"></i> <span>Blotter</span>
+                                    <i class="fa fa-users"></i> <span>Blotter Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
                                     <i class="fa fa-file"></i> <span>Clearance</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../indigency/indigency.php">
+                                    <i class="fa fa-file"></i> <span>Indigency</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../residency/residency.php">
+                                    <i class="fa fa-file"></i> <span>Residency</span>
                                 </a>
                             </li>
                             <li>
@@ -113,17 +123,27 @@
                             
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Permit</span>
+                                    <i class="fa fa-file"></i> <span>Permit Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../blotter/blotter.php">
-                                    <i class="fa fa-users"></i> <span>Blotter</span>
+                                    <i class="fa fa-users"></i> <span>Blotter Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
                                     <i class="fa fa-file"></i> <span>Clearance</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../indigency/indigency.php">
+                                    <i class="fa fa-file"></i> <span>Indigency</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../residency/residency.php">
+                                    <i class="fa fa-file"></i> <span>Residency</span>
                                 </a>
                             </li>
                             <li>
