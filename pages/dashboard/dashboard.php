@@ -44,7 +44,7 @@
                                     <a href="../household/household.php"><span class="info-box-icon bg-aqua"><i class="fa fa-home"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Total Households</span>
+                                      <span class="info-box-text">Total Household</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblhousehold");
