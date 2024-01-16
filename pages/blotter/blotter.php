@@ -28,7 +28,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Blotter
+                        Blotter Records
                     </h1>
                     
                 </section>
