@@ -35,7 +35,7 @@
                             </li>
                             <li>
                                 <a href="../zone/zone.php">
-                                    <i class="fa fa-user"></i> <span>Zone Leader</span>
+                                    <i class="fa fa-user"></i> <span>Captain</span>
                                 </a>
                             </li>
                             <li>

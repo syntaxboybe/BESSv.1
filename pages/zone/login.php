@@ -62,7 +62,7 @@ session_start();
             if($numrow_user > 0)
             {
                 while($row = mysqli_fetch_array($user)){
-                  $_SESSION['role'] = "Zone Leader";
+                  $_SESSION['role'] = "Barangay Captain";
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    

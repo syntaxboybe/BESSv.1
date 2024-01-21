@@ -28,7 +28,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Zone Leader
+                        Barangay Captain
                     </h1>
                     
                 </section>
@@ -41,15 +41,7 @@
                                 <div class="box-header">
                                     <div style="padding:10px;">
                                         
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addZoneModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Zone Leader</button>  
-                                        <?php 
-                                            if(!isset($_SESSION['staff']))
-                                            {
-                                        ?>
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
-                                        <?php
-                                            }
-                                        ?>
+                                    
                                 
                                     </div>                                
                                 </div><!-- /.box-header -->
@@ -66,8 +58,8 @@
                                                 <?php
                                                     }
                                                 ?>
-                                                <th>Zone</th>
-                                                <th>Userame</th>
+                                                <th>Account #</th>
+                                                <th>Username</th>
                                                 <th style="width: 40px !important;">Option</th>
                                             </tr>
                                         </thead>

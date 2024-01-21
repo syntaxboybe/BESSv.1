@@ -75,7 +75,7 @@
                                     </div>';
                             } 
                         }
-                        elseif($_SESSION['role'] == "Zone Leader"){
+                        elseif($_SESSION['role'] == "Barangay Captain"){
                             $user = mysqli_query($con,"SELECT * from tblzone where id = '".$_SESSION['userid']."' ");
                             while($row = mysqli_fetch_array($user)){
                                 echo '
@@ -143,7 +143,7 @@
                         header ("location: ".$_SERVER['REQUEST_URI']);
                     }
                 }
-                elseif($_SESSION['role'] == "Zone Leader"){
+                elseif($_SESSION['role'] == "Barangay Captain"){
                     $updzone = mysqli_query($con,"UPDATE tblzone set username = '$username', password = '$password' where id = '".$_SESSION['userid']."' ");
                     if($updzone == true){
                         header ("location: ".$_SERVER['REQUEST_URI']);

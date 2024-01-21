@@ -11,7 +11,7 @@
             <div class="col-md-12">
                 <input type="hidden" value="'.$row['id'].'" name="hidden_id" id="hidden_id"/>
                 <div class="form-group">
-                    <label>Zone #:</label>
+                    <label>Account #:</label>
                     <input name="txt_edit_zone" class="form-control input-sm" type="number"  value="'.$row['zone'].'"/>
                 </div>
                 <div class="form-group">
