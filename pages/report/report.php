@@ -28,7 +28,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Reports
+                        Resident Profile Reports
                     </h1>
                     
                 </section>
