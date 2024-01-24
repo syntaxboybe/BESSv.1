@@ -81,7 +81,7 @@
                             
                     </ul>';
                     }
-                    elseif($_SESSION['role'] == "Zone Leader"){
+                    elseif($_SESSION['role'] == "Barangay Captain"){
                         echo '
                         <ul class="sidebar-menu">
                             <li>

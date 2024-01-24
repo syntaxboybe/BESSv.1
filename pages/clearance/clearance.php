@@ -226,7 +226,7 @@
                     </div>   <!-- /.row -->
                     <?php
                     }
-                    elseif($_SESSION['role'] == "Zone Leader")
+                    elseif($_SESSION['role'] == "Barangay Captain")
                     {
                     ?>
                     <div class="row">
