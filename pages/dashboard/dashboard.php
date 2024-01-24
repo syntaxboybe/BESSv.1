@@ -137,6 +137,25 @@
                                 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-file"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Minor Age</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * FROM tblresident WHERE age < 18");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
                                     <a href="../clearance/clearance.php"><span class="info-box-icon bg-aqua"><i class="fa fa-file"></i></span></a>
 
                                     <div class="info-box-content">
@@ -182,6 +201,63 @@
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblblotter");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+                                
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../report/report.php"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Resident Report</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblresident ");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+                                
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../activity/activity.php"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Annoucement</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT * from tblactivity");
+                                            $num_rows = mysqli_num_rows($q);
+                                            echo $num_rows;
+                                        ?>
+                                      </span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                  </div>
+                                  <!-- /.info-box -->
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-xs-12"><br>
+                                  <div class="info-box">
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span></a>
+
+                                    <div class="info-box-content">
+                                      <span class="info-box-text">Resident Account</span>
+                                      <span class="info-box-number">
+                                        <?php
+                                            $q = mysqli_query($con,"SELECT username, password from tblresident");
                                             $num_rows = mysqli_num_rows($q);
                                             echo $num_rows;
                                         ?>

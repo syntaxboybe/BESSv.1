@@ -28,22 +28,37 @@ session_start();
               </h3>
             </div>
             <div class="panel-body">
-              <form role="form" method="post">
-                <div class="form-group">
-                  <label for="txt_username">Username</label>
-                  <input type="text" class="form-control" style="border-radius:0px" name="txt_username" placeholder="Enter Username">
-                </div>
-                <div class="form-group">
-                  <label for="txt_password">Password</label>
-                  <input type="password" class="form-control" style="border-radius:0px" name="txt_password" placeholder="Enter Password">
-                </div>
-                <button type="submit" class="btn btn-sm btn-primary" name="btn_login">Log in</button>
-                <label id="error" class="label label-danger pull-right"></label> 
-              </form>
+                <form role="form" method="post">
+                    <div class="form-group">
+                        <label for="txt_username">Username</label>
+                        <input type="text" class="form-control" style="border-radius:0px" name="txt_username" placeholder="Enter Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_password">Password</label>
+                            <input type="password" class="form-control" style="border-radius:0px" name="txt_password" id="passwordInput" placeholder="Enter Password">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <input type="checkbox" onclick="togglePasswordVisibility()"> Show Password
+                                </span>
+                            </div>
+                        </div>
+                    <div class="text-center"> 
+                    <button type="submit" class="btn btn-sm btn-primary" name="btn_login">Log in</button>
+                    </div>
+                    <label id="error" class="label label-danger pull-right"></label> 
+                </form>
             </div>
-          </div>
-          </div>
-        </div>
+            
+            <script>
+            function togglePasswordVisibility() {
+                var passwordInput = document.getElementById('passwordInput');
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                } else {
+                    passwordInput.type = "password";
+                }
+            }
+            </script>
 
       <?php
         include "pages/connection.php";
@@ -62,6 +77,10 @@ session_start();
             $staff = mysqli_query($con, "SELECT * from tblstaff where username = '$username' and password = '$password' ");
             $numrow_staff = mysqli_num_rows($staff);
 
+            $resident = mysqli_query($con, "SELECT * from tblresident where username = '$username' and password = '$password' ");
+            $numrow_resident = mysqli_num_rows($resident);
+
+
             if($numrow_admin > 0)
             {
                 while($row = mysqli_fetch_array($admin)){
@@ -74,7 +93,7 @@ session_start();
             elseif($numrow_zone > 0)
             {
                 while($row = mysqli_fetch_array($zone)){
-                  $_SESSION['role'] = "Zone Leader";
+                  $_SESSION['role'] = "Barangay Captain";
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    
@@ -89,14 +108,20 @@ session_start();
                   $_SESSION['username'] = $row['username'];
                 }    
                 header ('location: pages/resident/resident.php');
+                
             }
-            else
+            elseif($numrow_resident > 0)
             {
-              echo '<script type="text/javascript">document.getElementById("error").innerHTML = "Invalid Account";</script>';
-               
+                while($row = mysqli_fetch_array($resident)){
+                  $_SESSION['role'] = $row['fname'];
+                  $_SESSION['resident'] = "Resident";
+                  $_SESSION['userid'] = $row['id'];
+                  $_SESSION['username'] = $row['username'];
+                }    
+                header ('location: pages/permit/permit.php');
             }
-             
-        }
+              echo '<script type="text/javascript">document.getElementById("error").innerHTML = "Invalid Account";</script>';
+            }
         
       ?>
 
