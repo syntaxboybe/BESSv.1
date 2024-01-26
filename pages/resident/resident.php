@@ -33,7 +33,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Resident Information Profile
+                        Residents Profile
                     </h1>
                     
                 </section>
@@ -55,7 +55,7 @@
                                             if(!isset($_SESSION['staff']))
                                             {
                                         ?>
-                                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
+                                        
                                         <?php
                                             }
                                         ?>
@@ -100,7 +100,7 @@
                                                         <td>'.$row['age'].'</td>
                                                         <td>'.$row['gender'].'</td>
                                                         <td>'.$row['formerAddress'].'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-eye" aria-hidden="true"></i> View</button></td>
                                                     </tr>
                                                     ';
 
@@ -119,7 +119,7 @@
                                                         <td>'.$row['age'].'</td>
                                                         <td>'.$row['gender'].'</td>
                                                         <td>'.$row['formerAddress'].'</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-eye" aria-hidden="true"></i> View</button></td>
                                                     </tr>
                                                     ';
 

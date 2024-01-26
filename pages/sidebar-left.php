@@ -34,7 +34,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../zone/zone.php">
+                                <a href="../captain/captain.php">
                                     <i class="fa fa-user"></i> <span>Captain</span>
                                 </a>
                             </li>
