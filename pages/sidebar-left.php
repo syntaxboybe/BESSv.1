@@ -34,7 +34,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../zone/zone.php">
+                                <a href="../captain/captain.php">
                                     <i class="fa fa-user"></i> <span>Captain</span>
                                 </a>
                             </li>
@@ -65,7 +65,7 @@
                             </li>
                             <li>
                                 <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Activity</span>
+                                    <i class="fa fa-calendar"></i> <span>Announcements</span>
                                 </a>
                             </li>
                             <li>
@@ -128,7 +128,7 @@
                             </li>
                             <li>
                                 <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Activity</span>
+                                    <i class="fa fa-calendar"></i> <span>Announcements</span>
                                 </a>
                             </li>
                         </ul>';
@@ -148,7 +148,7 @@
                             </li>
                             <li>
                                 <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Activity</span>
+                                    <i class="fa fa-calendar"></i> <span>Announcements</span>
                                 </a>
                             </li>
                         </ul>';

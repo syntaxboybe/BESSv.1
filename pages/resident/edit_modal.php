@@ -5,7 +5,7 @@
     <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Edit Resident Information</h4>
+            <h4 class="modal-title">Resident Details</h4>
         </div>
         <div class="modal-body">';
 
@@ -157,9 +157,19 @@
                         </div> 
 
                         <div class="form-group">
-                            <label class="control-label">Zone #:</label>
-                            <input name="txt_edit_zone" class="form-control input-sm" type="text" value="'.$erow['zone'].'"/>
-                        </div>
+                        <label class="control-label">Zone #:</label>
+                        <select name="txt_edit_zone" class="form-control input-sm">
+                            <option value="'.$erow['zone'].'" selected>'.$erow['zone'].'</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
 
                         <div class="form-group">
                             <label class="control-label">Total Household Member:</label>

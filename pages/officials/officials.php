@@ -94,7 +94,7 @@
                                                             <td>'.$row['termStart'].'</td>
                                                             <td>'.$row['termEnd'].'</td>
                                                             <td>
-                                                                <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>';
+                                                                <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-eye" aria-hidden="true"></i> View</button>';
                                                                 if($row['status'] == 'Ongoing Term'){
                                                                 echo '<button class="btn btn-danger btn-sm" data-target="#endModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-minus-circle " aria-hidden="true"></i> End</button>';
                                                                 }
@@ -124,7 +124,7 @@
                                                             <td>'.$row['paddress'].'</td>
                                                             <td>'.$row['termStart'].'</td>
                                                             <td>'.$row['termEnd'].'</td>
-                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></td>
+                                                            <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-eye" aria-hidden="true"></i> View</button></td>
                                                         </tr>
                                                         ';
 
