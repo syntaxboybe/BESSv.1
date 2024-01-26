@@ -158,7 +158,17 @@
 
                                     <div class="form-group">
                                         <label class="control-label">Zone #:</label>
-                                        <input name="txt_zone" class="form-control input-sm" type="text"  placeholder="Zone #"/>
+                                        <select name="txt_edit_zone" class="form-control input-sm">
+                                                <option value="'.$erow['zone'].'" selected>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                        </select>
                                     </div>
 
                                     <div class="form-group">
