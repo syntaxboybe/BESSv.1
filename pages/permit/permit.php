@@ -47,7 +47,7 @@
                                 <div class="box-header">
                                     <div style="padding:10px;">
                                         
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Permit</button>  
+                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus" aria-hidden="true"></i> Add Permit</button>  
                                         <?php 
                                             if(!isset($_SESSION['staff']))
                                             {
@@ -293,7 +293,7 @@
                             <div class="box">
                                 <div class="box-header">  
                                     <div style="padding:10px;">
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#reqModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Request Permit</button>  
+                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#reqModal"><i class="fa fa-plus" aria-hidden="true"></i> Request Permit</button>  
                                     </div>
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">

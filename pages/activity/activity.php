@@ -45,7 +45,7 @@
                                             {
                                         ?>
 
-                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Post Activity</button>  
+                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-calendar" aria-hidden="true"></i> Post Activity</button>  
                                                 
                                                 <?php 
                                                     if(!isset($_SESSION['staff']))
