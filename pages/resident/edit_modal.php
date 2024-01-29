@@ -223,15 +223,16 @@
                             <label class="control-label">Dwelling Type:</label>
                             <select name="ddl_edit_dtype" class="form-control input-sm">
                                 <option value="'.$erow['dwellingtype'].'">'.$erow['dwellingtype'].'</option>
-                                <option value="1st Option">1st Option</option>
-                                <option value="2nd Option">2nd Option</option>
+                                <option value="House">House</option>
+                                <option value="Apartment">Apartment</option>
+                                <option value="Condo">Condo</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label class="control-label">Lightning Facilities:</label>
                         	<select name="txt_edit_lightning" class="form-control input-sm input-size">
-                                <option>'.$erow['philhealthNo'].'</option>
+                                <option>'.$erow['lightningFacilities'].'</option>
                                 <option>Electric</option>
                                 <option>Lamp</option>
                             </select>

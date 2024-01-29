@@ -41,7 +41,7 @@
                                 <div class="box-header">
                                     <div style="padding:10px;">
                                         
-                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Household</button>  
+                                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-home" aria-hidden="true"></i> Add Household</button>  
                                         
                                         <?php 
                                             if(!isset($_SESSION['staff']))

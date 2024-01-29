@@ -28,7 +28,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Dashboard
+                        Dashboard as of <?php echo date('F d, Y'); echo " at ".date('h:i A');?>
                     </h1>
                     
                 </section>
@@ -79,7 +79,7 @@
 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span></a>
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-male"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Male</span>
@@ -98,7 +98,7 @@
 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span></a>
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-female"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Female</span>
@@ -137,7 +137,7 @@
                                 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-file"></i></span></a>
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-child"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Minor Age</span>
@@ -194,7 +194,7 @@
 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../blotter/blotter.php"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span></a>
+                                    <a href="../blotter/blotter.php"><span class="info-box-icon bg-aqua"><i class="fa fa-file"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Complained Blotter</span>
@@ -213,7 +213,7 @@
                                 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../report/report.php"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span></a>
+                                    <a href="../report/report.php"><span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Resident Report</span>
@@ -232,10 +232,10 @@
                                 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../activity/activity.php"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span></a>
+                                    <a href="../activity/activity.php"><span class="info-box-icon bg-aqua"><i class="fa fa-calendar"></i></span></a>
 
                                     <div class="info-box-content">
-                                      <span class="info-box-text">Annoucement</span>
+                                      <span class="info-box-text">Announcement</span>
                                       <span class="info-box-number">
                                         <?php
                                             $q = mysqli_query($con,"SELECT * from tblactivity");
@@ -251,7 +251,7 @@
 
                                 <div class="col-md-3 col-sm-6 col-xs-12"><br>
                                   <div class="info-box">
-                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span></a>
+                                    <a href="../resident/resident.php"><span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span></a>
 
                                     <div class="info-box-content">
                                       <span class="info-box-text">Resident Account</span>
