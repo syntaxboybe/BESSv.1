@@ -8,7 +8,13 @@
                     <div class="user-panel">
                         
                         <div class="pull-left info">
-                            <h4>Hello, '.$_SESSION['role'].'</h4>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h4>Hello, '.$_SESSION['role'].'</h4>
 
                         </div>
                     </div>
