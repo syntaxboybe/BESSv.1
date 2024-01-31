@@ -30,22 +30,22 @@
                             </li>
                             <li>
                                 <a href="../staff/staff.php">
-                                    <i class="fa fa-user"></i> <span>Staff</span>
+                                    <i class="fa fa-user"></i> <span>Staff Account</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../captain/captain.php">
-                                    <i class="fa fa-user"></i> <span>Captain</span>
+                                    <i class="fa fa-user"></i> <span>Captain Account </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../household/household.php">
-                                    <i class="fa fa-home"></i> <span>Household</span>
+                                    <i class="fa fa-home"></i> <span>Household Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../resident/resident.php">
-                                    <i class="fa fa-users"></i> <span>Resident</span>
+                                    <i class="fa fa-users"></i> <span>Resident Record</span>
                                 </a>
                             </li>
                             <li>
@@ -60,22 +60,22 @@
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Clearance</span>
+                                    <i class="fa fa-file"></i> <span>Clearance Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Announcements</span>
+                                    <i class="fa fa-calendar"></i> <span>Announcement Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../report/report.php">
-                                    <i class="fa fa-file"></i> <span>Report</span>
+                                    <i class="fa fa-file"></i> <span>Resident Report</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../logs/logs.php">
-                                    <i class="fa fa-history"></i> <span>Logs</span>
+                                    <i class="fa fa-history"></i> <span>System Logs</span>
                                 </a>
                             </li>                            
                             
@@ -86,15 +86,22 @@
                         <ul class="sidebar-menu">
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Permit</span>
+                                    <i class="fa fa-file"></i> <span>Permit Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Clearance</span>
+                                    <i class="fa fa-file"></i> <span>Clearance Record</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../activity/activity.php">
+                                    <i class="fa fa-calendar"></i> <span>Announcement Record</span>
                                 </a>
                             </li>
                         </ul>';
+                        
+
                     }
                     elseif(isset($_SESSION['staff'])){
                         echo '
@@ -107,7 +114,7 @@
         
                             <li>
                                 <a href="../resident/resident.php">
-                                    <i class="fa fa-users"></i> <span>Resident</span>
+                                    <i class="fa fa-users"></i> <span>Resident Record</span>
                                 </a>
                             </li>
                             
@@ -123,12 +130,12 @@
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Clearance</span>
+                                    <i class="fa fa-file"></i> <span>Clearance Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Announcements</span>
+                                    <i class="fa fa-calendar"></i> <span>Announcement Record</span>
                                 </a>
                             </li>
                         </ul>';
@@ -138,17 +145,17 @@
                         <ul class="sidebar-menu">
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Permit</span>
+                                    <i class="fa fa-file"></i> <span>Request Permit</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Clearance</span>
+                                    <i class="fa fa-file"></i> <span>Request Clearance</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Announcements</span>
+                                    <i class="fa fa-calendar"></i> <span>Announcement Record</span>
                                 </a>
                             </li>
                         </ul>';
