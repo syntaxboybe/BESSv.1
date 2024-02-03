@@ -89,7 +89,7 @@ if ($_SESSION['role'] == "Administrator") {
                             </li>
                             <div class="dropdown3">
                               <button id="dropdown-btn3" class="dropdown-btn3 list-group-item list-group-item-action bg-blue text-adjust active">
-                                <i class="fa fa-file icon-adjust"></i> <span>Profiling</span>
+                                <i class="fa fa-file icon-adjust"></i> <span>Profiling Record</span>
                                 <span class="fa fa-angle-down align"></span>
                               </button>
                               <div class="dropdown-container3" id="dropdown3" style="display: none">
@@ -200,7 +200,7 @@ if ($_SESSION['role'] == "Administrator") {
                         <ul class="sidebar-menu">
                             <li>
                                 <a href="../officials/officials.php">
-                                    <i class="fa fa-user"></i> <span>Barangay Officials</span>
+                                    <i class="fa fa-users"></i> <span>Barangay Officials</span>
                                 </a>
                             </li>
         
@@ -212,17 +212,17 @@ if ($_SESSION['role'] == "Administrator") {
                             
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Permit Record</span>
+                                    <i class="fa fa-pencil"></i> <span>Permit Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../blotter/blotter.php">
-                                    <i class="fa fa-users"></i> <span>Blotter Record</span>
+                                    <i class="fa fa-pencil"></i> <span>Blotter Record</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Clearance Record</span>
+                                    <i class="fa fa-pencil"></i> <span>Clearance Record</span>
                                 </a>
                             </li>
                             <li>
@@ -236,12 +236,12 @@ if ($_SESSION['role'] == "Administrator") {
                         <ul class="sidebar-menu">
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Request Permit</span>
+                                    <i class="fa fa-pencil"></i> <span>Request Permit</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Request Clearance</span>
+                                    <i class="fa fa-pencil"></i> <span>Request Clearance</span>
                                 </a>
                             </li>
                             <li>
