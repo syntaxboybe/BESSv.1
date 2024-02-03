@@ -89,7 +89,7 @@ if ($_SESSION['role'] == "Administrator") {
                             </li>
                             <div class="dropdown3">
                               <button id="dropdown-btn3" class="dropdown-btn3 list-group-item list-group-item-action bg-blue text-adjust active">
-                                <i class="fa fa-file icon-adjust"></i> <span>Profiling</span>
+                                <i class="fa fa-file icon-adjust"></i> <span>Profiling Record</span>
                                 <span class="fa fa-angle-down align"></span>
                               </button>
                               <div class="dropdown-container3" id="dropdown3" style="display: none">
