@@ -86,6 +86,11 @@ if ($_SESSION['role'] == "Administrator") {
                                     <i class="fa fa-user"></i> <span>Barangay Officials</span>
                                 </a>
                             </li>
+                            <li>
+                                <a href="../blotter/blotter.php">
+                                    <i class="fa fa-file"></i> <span>Blotter Record</span>
+                                </a>
+                            </li>
                             </li>
                             <div class="dropdown3">
                               <button id="dropdown-btn3" class="dropdown-btn3 list-group-item list-group-item-action bg-blue text-adjust active">
@@ -130,11 +135,6 @@ if ($_SESSION['role'] == "Administrator") {
                                     <i class="fa fa-pencil"></i> <span>Clearance Record</span>
                                   </a>
                                 </li>
-                                <li>
-                                <a href="../blotter/blotter.php">
-                                    <i class="fa fa-pencil"></i> <span>Blotter Record</span>
-                                </a>
-                            </li>
                               </ul>
                             </div>
                           </div>
