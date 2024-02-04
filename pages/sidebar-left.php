@@ -213,13 +213,13 @@ if ($_SESSION['role'] == "Administrator") {
 
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-pencil"></i> <span>Permit Record</span>
+                                    <i class="fa fa-file"></i> <span>Permit Record</span>
                                 </a>
                             </li>
                             
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-pencil"></i> <span>Clearance Record</span>
+                                    <i class="fa fa-file"></i> <span>Clearance Record</span>
                                 </a>
                             </li>
                             <li>
