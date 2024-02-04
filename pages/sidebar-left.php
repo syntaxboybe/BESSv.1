@@ -206,18 +206,20 @@ if ($_SESSION['role'] == "Administrator") {
                             </li>
                             
                             <li>
-                                <a href="../permit/permit.php">
-                                    <i class="fa fa-pencil"></i> <span>Permit Record</span>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="../blotter/blotter.php">
-                                    <i class="fa fa-pencil"></i> <span>Blotter Record</span>
+                                    <i class="fa fa-file"></i> <span>Blotter Record</span>
                                 </a>
                             </li>
+
+                            <li>
+                                <a href="../permit/permit.php">
+                                    <i class="fa fa-file"></i> <span>Permit Record</span>
+                                </a>
+                            </li>
+                            
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-pencil"></i> <span>Clearance Record</span>
+                                    <i class="fa fa-file"></i> <span>Clearance Record</span>
                                 </a>
                             </li>
                             <li>
