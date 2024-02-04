@@ -198,11 +198,6 @@ if ($_SESSION['role'] == "Administrator") {
 } elseif (isset($_SESSION['staff'])) {
     echo '
                         <ul class="sidebar-menu">
-                            <li>
-                                <a href="../officials/officials.php">
-                                    <i class="fa fa-users"></i> <span>Barangay Officials</span>
-                                </a>
-                            </li>
         
                             <li>
                                 <a href="../resident/resident.php">
