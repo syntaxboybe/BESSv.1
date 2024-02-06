@@ -189,11 +189,6 @@ if ($_SESSION['role'] == "Administrator") {
                                     <i class="fa fa-file"></i> <span>Clearance Record</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Announcement Record</span>
-                                </a>
-                            </li>
                         </ul>';
 } elseif (isset($_SESSION['staff'])) {
     echo '

@@ -94,7 +94,7 @@
                                                         <td>'.$row['description'].'</td>
                                                         <td>
                                                             <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-eye" aria-hidden="true"></i>View </button>
-                                                            <button class="btn btn-primary btn-sm" data-target="#viewModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-photo" aria-hidden="true"></i> Photo</button>
+                                                            <button class="btn btn-primary btn-sm" data-target="#viewModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-photo" aria-hidden="true"></i>Photo</button>
                                                         </td>
                                                     </tr>
                                                     ';
@@ -130,8 +130,8 @@
                                                         <td>'.$row['activity'].'</td>
                                                         <td>'.$row['description'].'</td>
                                                         <td>
-                                                            <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-eye" aria-hidden="true"></i> View</button>
-                                                            <button class="btn btn-primary btn-sm" data-target="#viewModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-photo" aria-hidden="true"></i> Photo</button>
+                                                            <button class="btn btn-primary btn-sm" data-target="#editModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-eye" aria-hidden="true"></i>View</button>
+                                                            <button class="btn btn-primary btn-sm" data-target="#viewModal'.$row['id'].'" data-toggle="modal"><i class="fa fa-photo" aria-hidden="true"></i>Photo</button>
                                                         </td>
                                                     </tr>
                                                     ';
