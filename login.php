@@ -97,7 +97,7 @@ session_start();
                   $_SESSION['userid'] = $row['id'];
                   $_SESSION['username'] = $row['username'];
                 }    
-                header ('location: pages/activity/activity.php');
+                header ('location: pages/permit/permit.php');
             }
             elseif($numrow_staff > 0)
             {
