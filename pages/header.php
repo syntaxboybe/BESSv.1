@@ -92,7 +92,7 @@
                                     </div>';
                             } 
                         }
-                        elseif($_SESSION['staff'] == "Staff"){
+                        elseif($_SESSION['role'] == "Staff"){
                             $user = mysqli_query($con,"SELECT * from tblstaff where id = '".$_SESSION['userid']."' ");
                             while($row = mysqli_fetch_array($user)){
                                 echo '
