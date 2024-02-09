@@ -1,7 +1,5 @@
 # ⚒ LIST OF FUNCTIONALITIES:
 
-
-
 # 👨‍🔧 SYSTEM ADMIN (system personnel/secretary)
 
 ⚙️ view dashboard
@@ -16,10 +14,6 @@
 
 ⚙️ generate blotter
 
-
-
-
-
 # 👫 RESIDENT (Citizen)
 
 ⚙️ use account
@@ -29,11 +23,6 @@
 ⚙️ track progress
 
 ⚙️ view barangay activities
-
-    
-
-
-
 
 # 👩‍⚖️ STAFF (secretary/staff-available)
 
@@ -55,13 +44,8 @@
 
 ⚙️ post barangay activities
 
-
-
-
-
 # 👨‍⚖️ BARANGAY LEADER (captain)
 
 ⚙️ view incoming request
 
 ⚙️ approval or disapproval of request
-
