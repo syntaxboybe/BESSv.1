@@ -95,7 +95,7 @@ if ($_SESSION['role'] == "Administrator") {
                             <div class="dropdown3">
                               <button id="dropdown-btn3" class="dropdown-btn3 list-group-item list-group-item-action bg-blue text-adjust active">
                                 <i class="fa fa-file icon-adjust"></i> <span>Profiling Record</span>
-                                <span class="fa fa-angle-down align"></span>
+                                <i class="fa fa-angle-left pull-right"></i>
                               </button>
                               <div class="dropdown-container3" id="dropdown3" style="display: none">
                                 <ul class="list-group bg-blue text-adjust sidebar-menu"> <!-- Add a valid list element here -->
@@ -121,7 +121,7 @@ if ($_SESSION['role'] == "Administrator") {
                             <div class="dropdown2">
                             <button id="dropdown-btn2" class="dropdown-btn2 list-group-item list-group-item-action bg-blue text-adjust active">
                               <i class="fa fa-file icon-adjust"></i> <span>Issuance</span>
-                              <span class="fa fa-angle-down align"></span>
+                              <i class="fa fa-angle-left pull-right"></i>
                             </button>
                             <div class="dropdown-container2" id="dropdown2" style="display: none">
                               <ul class="list-group bg-blue text-adjust sidebar-menu"> <!-- Add a valid list element here -->
@@ -150,7 +150,7 @@ if ($_SESSION['role'] == "Administrator") {
                         <div class="dropdown1">
                         <button id="dropdown-btn1" class="dropdown-btn1 list-group-item list-group-item-action bg-blue text-adjust active">
                           <i class="fa fa-cog icon-adjust"></i> <span>Manage Account</span>
-                          <span class="fa fa-angle-down align"></span>
+                          <i class="fa fa-angle-left pull-right"></i>
                         </button>
                         <div class="dropdown-container1" id="dropdown1" style="display: none">
                           <ul class="list-group bg-blue text-adjust sidebar-menu"> <!-- Add a valid list element here -->
