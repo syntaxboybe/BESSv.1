@@ -60,7 +60,7 @@
 <div class="wrapper row-offcanvas row-offcanvas-left">
 
 <div class="breadcrumb justify-content-center text-center">  
-    <h3><center>𝐀𝐛𝐨𝐮𝐭 𝐭𝐡𝐞 𝐒𝐲𝐬𝐭𝐞𝐦</center></h3>
+    <h3><center>𝗔𝗯𝗼𝘂𝘁 𝘁𝗵𝗲 𝗦𝘆𝘀𝘁𝗲𝗺</center></h3>
     <h3>The capstone project, entitled “𝘉𝘢𝘳𝘢𝘯𝘨𝘢𝘺 𝘌-𝘴𝘦𝘳𝘷𝘪𝘤𝘦 𝘚𝘺𝘴𝘵𝘦𝘮” is a system purposely designed and developed for barangay use. It will automate the day-to-day operations and transactions in the barangay. The said project will improve the services of the barangay and the overall experience of the residents.</h3></h3>
 </div>
 
