@@ -171,7 +171,7 @@ if ($_SESSION['role'] == "Administrator") {
                             
                             <li>
                                 <a href="../logs/logs.php">
-                                    <i class="fa fa-history"></i> <span>System Logs</span>
+                                    <i class="fa fa-history"></i> <span>Logs</span>
                                 </a>
                             </li>                            
                             
