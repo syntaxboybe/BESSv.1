@@ -28,7 +28,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Barangay Staff Records
+                        Barangay Staffs
                     </h1>
                     
                 </section>

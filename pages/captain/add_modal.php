@@ -5,15 +5,15 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Manage Barangay Captain</h4>
+                        <h4 class="modal-title">Add New Barangay Captain</h4>
                     </div>
                     <div class="modal-body">
                         
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Zone #:</label>
-                                    <input name="txt_zone" class="form-control input-sm" type="text" placeholder="Zone #"/>
+                                    <label>Account #:</label>
+                                    <input name="txt_zone" class="form-control input-sm" type="text" placeholder="Account #"/>
                                 </div>
                                 <div class="form-group">
                                     <label>Username:</label>
