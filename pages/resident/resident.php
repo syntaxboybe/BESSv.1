@@ -33,7 +33,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Residents Profile
+                        Resident Records
                     </h1>
                     
                 </section>

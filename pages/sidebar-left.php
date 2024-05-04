@@ -83,30 +83,30 @@ if ($_SESSION['role'] == "Administrator") {
                             </li>
                             <li>
                                 <a href="../officials/officials.php">
-                                    <i class="fa fa-user"></i> <span>Barangay Officials</span>
+                                    <i class="fa fa-user"></i> <span>Officials</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../blotter/blotter.php">
-                                    <i class="fa fa-file"></i> <span>Blotter Record</span>
+                                    <i class="fa fa-file"></i> <span>Blotters</span>
                                 </a>
                             </li>
                             </li>
                             <div class="dropdown3">
                               <button id="dropdown-btn3" class="dropdown-btn3 list-group-item list-group-item-action bg-blue text-adjust active">
-                                <i class="fa fa-file icon-adjust"></i> <span>Profiling Record</span>
+                                <i class="fa fa-file icon-adjust"></i> <span>Profiling</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                               </button>
                               <div class="dropdown-container3" id="dropdown3" style="display: none">
                                 <ul class="list-group bg-blue text-adjust sidebar-menu"> <!-- Add a valid list element here -->
                                   <li>
                                     <a href="../household/household.php">
-                                      <i class="fa fa-home"></i> <span>Household Record</span>
+                                      <i class="fa fa-home"></i> <span>Households</span>
                                     </a>
                                   </li>
                                   <li>
                                   <a href="../resident/resident.php">
-                                      <i class="fa fa-users"></i> <span>Resident Record</span>
+                                      <i class="fa fa-users"></i> <span>Residents</span>
                                   </a>
                               </li>
                                 </ul>
@@ -115,24 +115,24 @@ if ($_SESSION['role'] == "Administrator") {
                             </li>
                             <li>
                                 <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Announcement Record</span>
+                                    <i class="fa fa-calendar"></i> <span>Announcements</span>
                                 </a>
                             </li>
                             <div class="dropdown2">
                             <button id="dropdown-btn2" class="dropdown-btn2 list-group-item list-group-item-action bg-blue text-adjust active">
-                              <i class="fa fa-file icon-adjust"></i> <span>Issuance</span>
+                              <i class="fa fa-file icon-adjust"></i> <span>Issuances</span>
                               <i class="fa fa-angle-left pull-right"></i>
                             </button>
                             <div class="dropdown-container2" id="dropdown2" style="display: none">
                               <ul class="list-group bg-blue text-adjust sidebar-menu"> <!-- Add a valid list element here -->
                                 <li>
                                   <a href="../permit/permit.php">
-                                    <i class="fa fa-pencil"></i> <span>Permit Record</span>
+                                    <i class="fa fa-pencil"></i> <span>Permits</span>
                                   </a>
                                 </li>
                                 <li>
                                   <a href="../clearance/clearance.php">
-                                    <i class="fa fa-pencil"></i> <span>Clearance Record</span>
+                                    <i class="fa fa-pencil"></i> <span>Clearances</span>
                                   </a>
                                 </li>
                               </ul>
@@ -143,25 +143,25 @@ if ($_SESSION['role'] == "Administrator") {
                             
                             <li>
                             <a href="../report/report.php">
-                                <i class="fa fa-file"></i> <span>Resident Report</span>
+                                <i class="fa fa-file"></i> <span>Reports</span>
                             </a>
                         </li>
                            
                         <div class="dropdown1">
                         <button id="dropdown-btn1" class="dropdown-btn1 list-group-item list-group-item-action bg-blue text-adjust active">
-                          <i class="fa fa-cog icon-adjust"></i> <span>Manage Account</span>
+                          <i class="fa fa-cog icon-adjust"></i> <span>Accounts</span>
                           <i class="fa fa-angle-left pull-right"></i>
                         </button>
                         <div class="dropdown-container1" id="dropdown1" style="display: none">
                           <ul class="list-group bg-blue text-adjust sidebar-menu"> <!-- Add a valid list element here -->
                             <li>
                               <a href="../staff/staff.php">
-                                <i class="fa fa-user"></i> <span>Staff Account</span>
+                                <i class="fa fa-user"></i> <span>Staffs</span>
                               </a>
                             </li>
                             <li>
                               <a href="../captain/captain.php">
-                                <i class="fa fa-user"></i> <span>Captain Account</span>
+                                <i class="fa fa-user"></i> <span>Captain</span>
                               </a>
                             </li>
                           </ul>
@@ -179,66 +179,95 @@ if ($_SESSION['role'] == "Administrator") {
 } elseif ($_SESSION['role'] == "Barangay Captain") {
     echo '
                         <ul class="sidebar-menu">
+                        
+                        <div class="dropdown1">
+                        <button id="dropdown-btn1" class="dropdown-btn1 list-group-item list-group-item-action bg-blue text-adjust active">
+                          <i class="fa fa-cog icon-adjust"></i> <span>Requested Issuances</span>
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </button>
+                        <div class="dropdown-container1" id="dropdown1" style="display: none">
+                          <ul class="list-group bg-blue text-adjust sidebar-menu">
+                            
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Permit Record</span>
+                                    <i class="fa fa-file"></i> <span>Permits</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Clearance Record</span>
+                                    <i class="fa fa-file"></i> <span>Clearances</span>
                                 </a>
                             </li>
                         </ul>';
 } elseif (isset($_SESSION['staff'])) {
     echo '
                         <ul class="sidebar-menu">
-        
+
                             <li>
-                                <a href="../resident/resident.php">
-                                    <i class="fa fa-users"></i> <span>Resident Record</span>
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="../blotter/blotter.php">
-                                    <i class="fa fa-file"></i> <span>Blotter Record</span>
-                                </a>
+                                <a href="../activity/activity.php">
+                            <i class="fa fa-calendar"></i> <span>Announcements</span>
+                            </a>
                             </li>
 
                             <li>
+                                <a href="../resident/resident.php">
+                                    <i class="fa fa-users"></i> <span>Residents</span>
+                                </a>
+                            </li>
+                            
+                            <div class="dropdown1">
+                        <button id="dropdown-btn1" class="dropdown-btn1 list-group-item list-group-item-action bg-blue text-adjust active">
+                          <i class="fa fa-cog icon-adjust"></i> <span>Requested Issuances</span>
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </button>
+                        <div class="dropdown-container1" id="dropdown1" style="display: none">
+                          <ul class="list-group bg-blue text-adjust sidebar-menu">
+
+                            <li>
+                                <a href="../blotter/blotter.php">
+                                    <i class="fa fa-file"></i> <span>Blotters</span>
+                                </a>
+                            </li>
+                        
+                            <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Permit Record</span>
+                                    <i class="fa fa-file"></i> <span>Permits</span>
                                 </a>
                             </li>
                             
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Clearance Record</span>
+                                    <i class="fa fa-file"></i> <span>Clearances</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Announcement Record</span>
-                                </a>
-                            </li>
+                            
                         </ul>';
 } else {
     echo '
                         <ul class="sidebar-menu">
+                         
+                        <li>
+                        <a href="../activity/activity.php">
+                            <i class="fa fa-calendar"></i> <span>Announcements</span>
+                        </a>
+                    </li>
+
+                        <div class="dropdown1">
+                        <button id="dropdown-btn1" class="dropdown-btn1 list-group-item list-group-item-action bg-blue text-adjust active">
+                          <i class="fa fa-cog icon-adjust"></i> <span>Request Issuance</span>
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </button>
+                        <div class="dropdown-container1" id="dropdown1" style="display: none">
+                          <ul class="list-group bg-blue text-adjust sidebar-menu">
+                        
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-pencil"></i> <span>Request Permit</span>
+                                    <i class="fa fa-pencil"></i> <span>Permit</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-pencil"></i> <span>Request Clearance</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../activity/activity.php">
-                                    <i class="fa fa-calendar"></i> <span>Announcement Record</span>
+                                    <i class="fa fa-pencil"></i> <span>Clearance</span>
                                 </a>
                             </li>
                         </ul>';

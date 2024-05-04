@@ -41,7 +41,7 @@
                                 <div class="box-header">
                                     <div style="padding:10px;">
                                         
-                                    
+                                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addZoneModal"><i class="fa fa-user-plus" aria-hidden="true"></i> New Captain</button>  
                                 
                                     </div>                                
                                 </div><!-- /.box-header -->
