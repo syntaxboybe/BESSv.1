@@ -12,7 +12,7 @@
                         echo '
                 <input type="hidden" value="'.$row['pid'].'" name="hidden_id" id="hidden_id"/>';
                         ?>
-                            <p>Are you sure you want to disapproved this clearance? If yes, put the findings.</p>
+                            <p>Are you sure you want to revert this clearance? If yes, put the findings.</p>
                        
                        <div class="row">
                            <div class="col-md-12">
