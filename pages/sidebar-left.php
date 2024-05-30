@@ -217,7 +217,7 @@ if ($_SESSION['role'] == "Administrator") {
                             
                             <div class="dropdown1">
                         <button id="dropdown-btn1" class="dropdown-btn1 list-group-item list-group-item-action bg-blue text-adjust active">
-                          <i class="fa fa-cog icon-adjust"></i> <span>Requested Issuances</span>
+                          <i class="fa fa-envelope icon-adjust"></i> <span>Requested Issuances</span>
                           <i class="fa fa-angle-left pull-right"></i>
                         </button>
                         <div class="dropdown-container1" id="dropdown1" style="display: none">
@@ -225,19 +225,19 @@ if ($_SESSION['role'] == "Administrator") {
 
                             <li>
                                 <a href="../blotter/blotter.php">
-                                    <i class="fa fa-file"></i> <span>Blotters</span>
+                                    <i class="fa fa-inbox"></i> <span>Blotters</span>
                                 </a>
                             </li>
                         
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-file"></i> <span>Permits</span>
+                                    <i class="fa fa-certificate"></i> <span>Permits</span>
                                 </a>
                             </li>
                             
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-file"></i> <span>Clearances</span>
+                                    <i class="fa fa-certificate"></i> <span>Clearances</span>
                                 </a>
                             </li>
                             
@@ -254,7 +254,7 @@ if ($_SESSION['role'] == "Administrator") {
 
                         <div class="dropdown1">
                         <button id="dropdown-btn1" class="dropdown-btn1 list-group-item list-group-item-action bg-blue text-adjust active">
-                          <i class="fa fa-cog icon-adjust"></i> <span>Request Issuance</span>
+                          <i class="fa fa-envelope icon-adjust"></i> <span>Request Issuance</span>
                           <i class="fa fa-angle-left pull-right"></i>
                         </button>
                         <div class="dropdown-container1" id="dropdown1" style="display: none">
@@ -262,12 +262,12 @@ if ($_SESSION['role'] == "Administrator") {
                         
                             <li>
                                 <a href="../permit/permit.php">
-                                    <i class="fa fa-pencil"></i> <span>Permit</span>
+                                    <i class="fa fa-certificate"></i> <span>Permit</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../clearance/clearance.php">
-                                    <i class="fa fa-pencil"></i> <span>Clearance</span>
+                                    <i class="fa fa-certificate"></i> <span>Clearance</span>
                                 </a>
                             </li>
                         </ul>';
