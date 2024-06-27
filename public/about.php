@@ -65,7 +65,7 @@
 </div>
 <div class="breadcrumb justify-content-center text-center">        
 <h2><strong>Barangay Information</strong></h2></div>
-<h3><center> Poblacion is a barangay in the municipality of Naawan, in the province of Misamis Oriental. Its population as determined by the 2020 Census was 5,714. This represented 25.46% of the total population of Naawan.</center></h3>
+<h3><center> pending info</center></h3>
 </body>
 
 
