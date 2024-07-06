@@ -28,7 +28,6 @@
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
   }
 
   .carousel {
@@ -42,7 +41,6 @@
     transition: 0.3s;
     background-color: #EEEEEE;
     background-color:#EEEDEB;
-    
   }
 
   .carousel img {
@@ -135,10 +133,10 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container" style="margin-top: 20px;align-items: center;margin-bottom: 70px;">
+<div class="container" style="align-items: center;">
         <div class="row" style="align-items: center;">
             <div class="col-md-6">
-                <div class="carousel slide" data-ride="carousel" id="carousel-1" style="background-size: cover;">
+                <div class="carousel slide" data-ride="carousel" id="carousel-1" style="background-size: auto;">
                     <div class="carousel-inner">
                         <div class="item active"><img class="w-100 d-block" src="../img/homepage.jpg" alt="Slide Image"></div>
                         <div class="item"><img class="w-100 d-block" src="../img/citizen_charter.png" alt="Slide Image"></div>
@@ -152,18 +150,17 @@
                     </ol>
                 </div>
             </div>
-            <div class="col-md-6 text-justify">
-                <p><b> <center>VISION</center></b></p> 𝘈𝘯 𝘦𝘮𝘱𝘰𝘸𝘦𝘳𝘦𝘥 𝘢𝘯𝘥 𝘩𝘦𝘢𝘭𝘵𝘩𝘺 𝘕𝘢𝘢𝘸𝘢𝘯 𝘪𝘯 𝘢 𝘨𝘭𝘰𝘣𝘢𝘭𝘭𝘺-𝘤𝘰𝘮𝘱𝘦𝘵𝘪𝘵𝘪𝘷𝘦, 𝘦𝘤𝘰𝘭𝘰𝘨𝘪𝘤𝘢𝘭𝘭𝘺 𝘣𝘢𝘭𝘢𝘯𝘤𝘦𝘥 𝘢𝘯𝘥 𝘱𝘦𝘢𝘤𝘦𝘧𝘶𝘭 𝘔𝘪𝘴𝘢𝘮𝘪𝘴 𝘖𝘳𝘪𝘦𝘯𝘵𝘢𝘭 𝘶𝘯𝘥𝘦𝘳 𝘢 𝘳𝘦𝘴𝘱𝘰𝘯𝘴𝘪𝘷𝘦 𝘢𝘯𝘥 𝘢𝘤𝘤𝘰𝘶𝘯𝘵𝘢𝘣𝘭𝘦 𝘨𝘰𝘷𝘦𝘳𝘯𝘢𝘯𝘤𝘦.
-                <br>
-                <br>
-                <br>
-                <p><b><center>MISSION</center></b></p> 𝘞𝘦 𝘴𝘩𝘢𝘭𝘭 𝘴𝘶𝘴𝘵𝘢𝘪𝘯 𝘰𝘶𝘳 𝘥𝘦𝘭𝘪𝘷𝘦𝘳𝘺 𝘰𝘧 𝘴𝘦𝘳𝘷𝘪𝘤𝘦𝘴 𝘵𝘰 𝘵𝘩𝘦 𝘧𝘶𝘭𝘭𝘦𝘴𝘵 𝘰𝘧 𝘰𝘶𝘳 𝘢𝘣𝘪𝘭𝘪𝘵𝘪𝘦𝘴, 𝘩𝘢𝘳𝘯𝘦𝘴𝘴𝘪𝘯𝘨 𝘰𝘶𝘳 𝘱𝘰𝘵𝘦𝘯𝘵𝘪𝘢𝘭𝘴, 𝘢𝘯𝘥 𝘣𝘶𝘪𝘭𝘥𝘪𝘯𝘨 𝘮𝘰𝘳𝘦 𝘮𝘦𝘢𝘯𝘪𝘯𝘨𝘧𝘶𝘭 𝘵𝘦𝘢𝘮𝘸𝘰𝘳𝘬; 𝘞𝘦 𝘸𝘪𝘭𝘭 𝘩𝘰𝘭𝘥 𝘢𝘯𝘥 𝘱𝘳𝘰𝘮𝘰𝘵𝘦 𝘢𝘵 𝘢𝘭𝘭 𝘵𝘪𝘮𝘦𝘴 𝘵𝘩𝘦 𝘱𝘳𝘪𝘯𝘤𝘪𝘱𝘭𝘦𝘴 𝘢𝘯𝘥 𝘱𝘰𝘭𝘪𝘤𝘪𝘦𝘴 𝘰𝘧 𝘵𝘩𝘦 𝘔𝘶𝘯𝘪𝘤𝘪𝘱𝘢𝘭 𝘎𝘰𝘷𝘦𝘳𝘯𝘮𝘦𝘯𝘵; 𝘢𝘯𝘥 𝘊𝘰𝘨𝘯𝘪𝘻𝘢𝘯𝘵 𝘰𝘧 𝘰𝘶𝘳 𝘢𝘷𝘰𝘸𝘦𝘥 𝘱𝘶𝘳𝘱𝘰𝘴𝘦, 𝘸𝘦 𝘤𝘰𝘮𝘮𝘪𝘵 𝘰𝘶𝘳𝘴𝘦𝘭𝘷𝘦𝘴 𝘵𝘰 𝘮𝘢𝘬𝘦 𝘔𝘪𝘴𝘢𝘮𝘪𝘴 𝘖𝘳𝘪𝘦𝘯𝘵𝘢𝘭 𝘢 𝘤𝘩𝘢𝘭𝘭𝘦𝘯𝘨𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘢𝘥𝘷𝘦𝘯𝘵𝘶𝘳𝘰𝘶𝘴, 𝘢 𝘩𝘢𝘷𝘦𝘯 𝘧𝘰𝘳 𝘵𝘩𝘦 𝘵𝘳𝘢𝘷𝘦𝘭𝘦𝘳𝘴, 𝘢𝘯𝘥 𝘢 𝘳𝘦𝘢𝘭 𝘩𝘰𝘮𝘦 𝘧𝘰𝘳 𝘵𝘩𝘦 𝘔𝘪𝘴𝘢𝘮𝘪𝘴𝘯𝘰𝘯.
-                <br>
-                <br>
-                </p>
-            </div>
-        </div>
-    </div>
+        <div class="col-md-6 text-center">
+    <h3><b>VISSION</b></h3>
+    <h4>𝘈𝘯 𝘦𝘮𝘱𝘰𝘸𝘦𝘳𝘦𝘥 𝘢𝘯𝘥 𝘩𝘦𝘢𝘭𝘵𝘩𝘺 𝘕𝘢𝘢𝘸𝘢𝘯 𝘪𝘯 𝘢 𝘨𝘭𝘰𝘣𝘢𝘭𝘭𝘺-𝘤𝘰𝘮𝘱𝘦𝘵𝘪𝘵𝘪𝘷𝘦, 𝘦𝘤𝘰𝘭𝘰𝘨𝘪𝘤𝘢𝘭𝘭𝘺 𝘣𝘢𝘭𝘢𝘯𝘤𝘦𝘥 𝘢𝘯𝘥 𝘱𝘦𝘢𝘤𝘦𝘧𝘶𝘭 𝘔𝘪𝘴𝘢𝘮𝘪𝘴 𝘖𝘳𝘪𝘦𝘯𝘵𝘢𝘭 𝘶𝘯𝘥𝘦𝘳 𝘢 𝘳𝘦𝘴𝘱𝘰𝘯𝘴𝘪𝘷𝘦 𝘢𝘯𝘥 𝘢𝘤𝘤𝘰𝘶𝘯𝘵𝘢𝘣𝘭𝘦 𝘨𝘰𝘷𝘦𝘳𝘯𝘢𝘯𝘤𝘦.</h4>
+    <br>
+    <h3><b>MISSION</b></h3>
+    <h4>𝘞𝘦 𝘴𝘩𝘢𝘭𝘭 𝘴𝘶𝘴𝘵𝘢𝘪𝘯 𝘰𝘶𝘳 𝘥𝘦𝘭𝘪𝘷𝘦𝘳𝘺 𝘰𝘧 𝘴𝘦𝘳𝘷𝘪𝘤𝘦𝘴 𝘵𝘰 𝘵𝘩𝘦 𝘧𝘶𝘭𝘭𝘦𝘴𝘵 𝘰𝘧 𝘰𝘶𝘳 𝘢𝘣𝘪𝘭𝘪𝘵𝘪𝘦𝘴, 𝘩𝘢𝘳𝘯𝘦𝘴𝘴𝘪𝘯𝘨 𝘰𝘶𝘳 𝘱𝘰𝘵𝘦𝘯𝘵𝘪𝘢𝘭𝘴, 𝘢𝘯𝘥 𝘣𝘶𝘪𝘭𝘥𝘪𝘯𝘨 𝘮𝘰𝘳𝘦 𝘮𝘦𝘢𝘯𝘪𝘯𝘨𝘧𝘶𝘭 𝘵𝘦𝘢𝘮𝘸𝘰𝘳𝘬; 𝘞𝘦 𝘸𝘪𝘭𝘭 𝘩𝘰𝘭𝘥 𝘢𝘯𝘥 𝘱𝘳𝘰𝘮𝘰𝘵𝘦 𝘢𝘵 𝘢𝘭𝘭 𝘵𝘪𝘮𝘦𝘴 𝘵𝘩𝘦 𝘱𝘳𝘪𝘯𝘤𝘪𝘱𝘭𝘦s.</h4>
+      </div>
+      </div>
+
+</div>
+</div>
     <footer>© 𝟐𝟎𝟐𝟑-𝟐𝟎𝟐𝟒 𝘉𝘢𝘳𝘢𝘯𝘨𝘢𝘺 𝘌-𝘴𝘦𝘳𝘷𝘪𝘤𝘦 𝘚𝘺𝘴𝘵𝘦𝘮</footer>
     </tbody>
 
