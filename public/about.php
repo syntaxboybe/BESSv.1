@@ -65,6 +65,8 @@
 </div>
 <div class="breadcrumb justify-content-center text-center">        
 <h2><strong>Barangay Emergency Hotline</strong></h2></div>
+  
+<h3><center>contact list</center></h3>
 <h3><center> pending info</center></h3>
 </body>
 
