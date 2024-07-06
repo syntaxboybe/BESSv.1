@@ -485,8 +485,7 @@ CREATE TABLE `tblzone` (
 --
 
 INSERT INTO `tblzone` (`id`, `zone`, `username`, `password`) VALUES
-(0, '1', 'zone', 'zone'),
-(2, '8', 'zone', 'zone');
+(0, '1', 'kap', 'kap'),
 
 --
 -- Indexes for dumped tables
