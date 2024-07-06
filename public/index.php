@@ -23,12 +23,12 @@
     justify-content: center;
     height: 87vh;
     background-color: #EEEEEE;
+    background-color:#EEEDEB;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
-
   }
 
   .carousel {
@@ -41,6 +41,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     background-color: #EEEEEE;
+    background-color:#EEEDEB;
     
   }
 
