@@ -20,7 +20,7 @@ session_start();
           <div class="col-md-4 col-md-offset-4">
               <div class="panel panel-default">
             <div class="panel-heading" style="text-align:center;">
-                <img src="img/poblacionlogo.png" style="height:150px;"/>
+                <img src="img/poblacionlogo.png" style="height:130px;"/>
               <h3 class="panel-title">
                 <strong>
                     Barangay E-service System
@@ -29,16 +29,16 @@ session_start();
             </div>
             <div class="panel-body">
                 <form role="form" method="post">
-                    <div class="form-group">
+                    <div class="form-group" style="text-align:center;">
                         <label for="txt_username">Username</label>
-                        <input type="text" class="form-control" style="border-radius:0px" name="txt_username" placeholder="Enter Username">
+                        <input type="text" class="form-control" style="text-align:center;" name="txt_username" placeholder="Enter Username">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="text-align:center;">
                         <label for="txt_password">Password</label>
-                            <input type="password" class="form-control" style="border-radius:0px" name="txt_password" id="passwordInput" placeholder="Enter Password">
+                            <input type="password" class="form-control" style="text-align:center;" name="txt_password" id="passwordInput" placeholder="Enter Password">
                             <div class="input-group-append">
                                 <span class="input-group-text">
-                                    <input type="checkbox" onclick="togglePasswordVisibility()"> Show Password
+                                    <input type="checkbox" onclick="togglePasswordVisibility()"> View Password
                                 </span>
                             </div>
                         </div>
@@ -62,68 +62,60 @@ session_start();
 
       <?php
         include "pages/connection.php";
-        if(isset($_POST['btn_login']))
-        { 
-            $username = $_POST['txt_username'];
-            $password = $_POST['txt_password'];
+if(isset($_POST['btn_login'])) {
+    $username = $_POST['txt_username'];
+    $password = $_POST['txt_password'];
 
 
-            $admin = mysqli_query($con, "SELECT * from tbluser where username = '$username' and password = '$password' and type = 'administrator' ");
-            $numrow_admin = mysqli_num_rows($admin);
+    $admin = mysqli_query($con, "SELECT * from tbluser where username = '$username' and password = '$password' and type = 'administrator' ");
+    $numrow_admin = mysqli_num_rows($admin);
 
-            $zone = mysqli_query($con, "SELECT * from tblzone where username = '$username' and password = '$password'");
-            $numrow_zone = mysqli_num_rows($zone);
+    $zone = mysqli_query($con, "SELECT * from tblzone where username = '$username' and password = '$password'");
+    $numrow_zone = mysqli_num_rows($zone);
 
-            $staff = mysqli_query($con, "SELECT * from tblstaff where username = '$username' and password = '$password' ");
-            $numrow_staff = mysqli_num_rows($staff);
+    $staff = mysqli_query($con, "SELECT * from tblstaff where username = '$username' and password = '$password' ");
+    $numrow_staff = mysqli_num_rows($staff);
 
-            $resident = mysqli_query($con, "SELECT * from tblresident where username = '$username' and password = '$password' ");
-            $numrow_resident = mysqli_num_rows($resident);
+    $resident = mysqli_query($con, "SELECT * from tblresident where username = '$username' and password = '$password' ");
+    $numrow_resident = mysqli_num_rows($resident);
 
 
-            if($numrow_admin > 0)
-            {
-                while($row = mysqli_fetch_array($admin)){
-                  $_SESSION['role'] = "Administrator";
-                  $_SESSION['userid'] = $row['id'];
-                  $_SESSION['username'] = $row['username'];
-                }    
-                header ('location: pages/dashboard/dashboard.php');
-            }
-            elseif($numrow_zone > 0)
-            {
-                while($row = mysqli_fetch_array($zone)){
-                  $_SESSION['role'] = "Barangay Captain";
-                  $_SESSION['userid'] = $row['id'];
-                  $_SESSION['username'] = $row['username'];
-                }    
-                header ('location: pages/permit/permit.php');
-            }
-            elseif($numrow_staff > 0)
-            {
-                while($row = mysqli_fetch_array($staff)){
-                  $_SESSION['role'] = $row['name'];
-                  $_SESSION['staff'] = "Staff";
-                  $_SESSION['userid'] = $row['id'];
-                  $_SESSION['username'] = $row['username'];
-                }    
-                header ('location: pages/resident/resident.php');
-                
-            }
-            elseif($numrow_resident > 0)
-            {
-                while($row = mysqli_fetch_array($resident)){
-                  $_SESSION['role'] = $row['fname'];
-                  $_SESSION['resident'] = "Resident";
-                  $_SESSION['userid'] = $row['id'];
-                  $_SESSION['username'] = $row['username'];
-                }    
-                header ('location: pages/activity/activity.php');
-            }
-              echo '<script type="text/javascript">document.getElementById("error").innerHTML = "Invalid Account";</script>';
-            }
-        
-      ?>
+    if($numrow_admin > 0) {
+        while($row = mysqli_fetch_array($admin)) {
+            $_SESSION['role'] = "Administrator";
+            $_SESSION['userid'] = $row['id'];
+            $_SESSION['username'] = $row['username'];
+        }
+        header('location: pages/dashboard/dashboard.php');
+    } elseif($numrow_zone > 0) {
+        while($row = mysqli_fetch_array($zone)) {
+            $_SESSION['role'] = "Barangay Captain";
+            $_SESSION['userid'] = $row['id'];
+            $_SESSION['username'] = $row['username'];
+        }
+        header('location: pages/permit/permit.php');
+    } elseif($numrow_staff > 0) {
+        while($row = mysqli_fetch_array($staff)) {
+            $_SESSION['role'] = $row['name'];
+            $_SESSION['staff'] = "Staff";
+            $_SESSION['userid'] = $row['id'];
+            $_SESSION['username'] = $row['username'];
+        }
+        header('location: pages/resident/resident.php');
+
+    } elseif($numrow_resident > 0) {
+        while($row = mysqli_fetch_array($resident)) {
+            $_SESSION['role'] = $row['fname'];
+            $_SESSION['resident'] = "Resident";
+            $_SESSION['userid'] = $row['id'];
+            $_SESSION['username'] = $row['username'];
+        }
+        header('location: pages/activity/activity.php');
+    }
+    echo '<script type="text/javascript">document.getElementById("error").innerHTML = "Invalid Account";</script>';
+}
+
+?>
 
     </body>
 </html>
