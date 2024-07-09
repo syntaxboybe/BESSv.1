@@ -18,32 +18,29 @@ session_start();
 
         <div class="container" style="margin-top:150px">
           <div class="col-md-4 col-md-offset-4">
-              <div class="panel panel-default">
-            <div class="panel-heading" style="text-align:center;">
-                <img src="img/poblacionlogo.png" style="height:130px;"/>
-              <h3 class="panel-title">
-                <strong>
-                    Barangay E-service System
-                </strong>
-              </h3>
-            </div>
+        <div class="panel panel-default">
+        <div class="panel-heading" style="text-align: center; background-color: #3c8dbc; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
+                <img src="img/poblacionlogo.png" style="height:100px;"/>
+              <h3 class="panel-title" style="color: white;">𝐁𝐚𝐫𝐚𝐧𝐠𝐚𝐲 𝐄-𝐬𝐞𝐫𝐯𝐢𝐜𝐞 𝐒𝐲𝐬𝐭𝐞𝐦</h3>
+          
+          </div>
             <div class="panel-body">
                 <form role="form" method="post">
-                    <div class="form-group" style="text-align:center;">
-                        <label for="txt_username">Username</label>
-                        <input type="text" class="form-control" style="text-align:center;" name="txt_username" placeholder="Enter Username">
+                    <div class="form-group" style="text-align:center; background-color: #f9f9f9;">
+                       <!-- <label for="txt_username">𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞</label> !-->
+                        <input type="text" class="form-control" style="text-align:center;" name="txt_username" placeholder="𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞">
                     </div>
-                    <div class="form-group" style="text-align:center;">
-                        <label for="txt_password">Password</label>
-                            <input type="password" class="form-control" style="text-align:center;" name="txt_password" id="passwordInput" placeholder="Enter Password">
+                    <div class="form-group" style="text-align:center; background-color: #f9f9f9;">
+                      <!-- <label for="txt_password">𝐏𝐚𝐬𝐬𝐰𝐨𝐫𝐝</label> !--->
+                            <input type="password" class="form-control" style="text-align:center; margin-bottom: 10px;" name="txt_password" id="passwordInput" placeholder="𝐏𝐚𝐬𝐬𝐰𝐨𝐫𝐝">
                             <div class="input-group-append">
-                                <span class="input-group-text">
-                                    <input type="checkbox" onclick="togglePasswordVisibility()"> View Password
+                                <span class="input-group-text" style="margin-top: 10px;">
+                                    <input type="checkbox" onclick="togglePasswordVisibility()"> 𝐕𝐢𝐞𝐰 𝐏𝐚𝐬𝐬𝐰𝐨𝐫𝐝
                                 </span>
                             </div>
                         </div>
-                    <div class="text-center"> 
-                    <button type="submit" class="btn btn-sm btn-primary" name="btn_login">Log in</button>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-sm btn-primary" name="btn_login">𝐋𝐨𝐠 𝐈𝐧</button>
                     </div>
                     <label id="error" class="label label-danger pull-right"></label> 
                 </form>

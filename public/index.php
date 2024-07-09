@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
     height: 87vh;
-    background-color: #EEEEEE;
+    background-color: #f8f8f8;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
