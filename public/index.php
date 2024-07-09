@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: center;
     height: 87vh;
+    background-color: #f8f8f8;
     background-color: #EEEEEE;
     background-color:#EEEDEB;
     padding: 20px;
