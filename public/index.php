@@ -24,9 +24,6 @@
     justify-content: center;
     height: 87vh;
     background-color: #3c8dbc;
-    background-color: #f8f8f8;
-    background-color: #EEEEEE;
-    background-color:#EEEDEB;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -43,8 +40,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     background-color: #3c8dbc;
-    background-color: #EEEEEE;
-    background-color:#EEEDEB;
   }
 
   .carousel img {
@@ -63,7 +58,7 @@
     cursor: pointer;
     z-index: 1;
     padding: 10px;
-    background-color: rgba(1, 1, 1, 1 );
+    background-color: rgba(0.5, 0.5, 0.5, 0.5)
     border-radius: 10px;
     transition: 0.2s;
     
