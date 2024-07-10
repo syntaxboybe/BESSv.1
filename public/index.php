@@ -117,7 +117,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="about.php">About</a></li>
-        <li><a href="javascript:void(0)" onclick="redirectLogin()">Login</a></li>
+        <li><a href="javascript:void(0)" onclick="redirectLogin()">Sign In</a></li>
         
         <script>
         function redirectLogin() {
