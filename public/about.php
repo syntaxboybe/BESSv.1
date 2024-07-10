@@ -60,6 +60,7 @@
 
 <div class="wrapper row-offcanvas row-offcanvas-left">
 
+
 <div class="breadcrumb justify-content-center text-center" style="background-color: #3c8dbc; color: white;">  
     <h3><b><i class="fa fa-info-circle" aria-hidden="true"></i> About the System</b></h3>
       <h4>The capstone project, entitled “𝘉𝘢𝘳𝘢𝘯𝘨𝘢𝘺 𝘌-𝘴𝘦𝘳𝘷𝘪𝘤𝘦 𝘚𝘺𝘴𝘵𝘦𝘮” is a system purposely designed and developed for barangay use. It will automate the day-to-day operations and transactions in the barangay. The said project will improve the services of the barangay and the overall experience of the residents.</h4>
@@ -76,6 +77,18 @@
       <h4><i class="fa fa-envelope" aria-hidden="true" style="margin-top: 10px;"></i> <a href="https://web.facebook.com/profile.php?id=61556262989223" style="color: white; text-decoration: underline;"> brgy.poblacion.naawan@gmail.com</a></h4>
     </div>
   </body>
+
+<div class="breadcrumb justify-content-center text-center">  
+    <h2><strong>About the System</strong></h2>
+    <h3><center>The capstone project, entitled “𝘉𝘢𝘳𝘢𝘯𝘨𝘢𝘺 𝘌-𝘴𝘦𝘳𝘷𝘪𝘤𝘦 𝘚𝘺𝘴𝘵𝘦𝘮” is a system purposely designed and developed for barangay use. It will automate the day-to-day operations and transactions in the barangay. The said project will improve the services of the barangay and the overall experience of the residents.</center></h3>
+</div>
+<div class="breadcrumb justify-content-center text-center">        
+<h2><strong>Barangay Emergency Hotline</strong></h2></div>
+  
+<h3><center>contact list</center></h3>
+<h3><center> pending info</center></h3>
+</body>
+
 
 
 <script src="../js/alert.js" type="text/javascript"></script>

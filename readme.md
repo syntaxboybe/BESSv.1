@@ -1,4 +1,4 @@
-# ⚒ LIST OF FUNCTIONALITIES(updated)
+# ⚒ LIST OF FUNCTIONALITIES(Updated List)
 
 # 👨‍🔧 SYSTEM ADMIN (system personnel/secretary)
 
