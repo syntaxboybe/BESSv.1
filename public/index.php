@@ -7,6 +7,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- font Awesome -->
     <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Ionicons -->
     <link href="../css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <link href="../js/morris/morris-0.4.3.min.css" rel="stylesheet" type="text/css" />
@@ -22,7 +23,7 @@
     align-items: center;
     justify-content: center;
     height: 87vh;
-    background-color: #f8f8f8;
+    background-color: #3c8dbc;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -38,7 +39,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
-    background-color: #EEEEEE;
+    background-color: #3c8dbc;
   }
 
   .carousel img {
@@ -57,9 +58,9 @@
     cursor: pointer;
     z-index: 1;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(1, 1, 1, 1 );
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.2s;
     
   }
 
@@ -148,11 +149,11 @@
                     </ol>
                 </div>
             </div>
-        <div class="col-md-6 text-center">
-    <h3><b>VISSION</b></h3>
+        <div class="col-md-6 text-center" style="color: white;">
+    <h3><b><i class="fa fa-dot-circle-o" aria-hidden="true"></i> VISSION</b></h3>
     <h4>𝘈𝘯 𝘦𝘮𝘱𝘰𝘸𝘦𝘳𝘦𝘥 𝘢𝘯𝘥 𝘩𝘦𝘢𝘭𝘵𝘩𝘺 𝘕𝘢𝘢𝘸𝘢𝘯 𝘪𝘯 𝘢 𝘨𝘭𝘰𝘣𝘢𝘭𝘭𝘺-𝘤𝘰𝘮𝘱𝘦𝘵𝘪𝘵𝘪𝘷𝘦, 𝘦𝘤𝘰𝘭𝘰𝘨𝘪𝘤𝘢𝘭𝘭𝘺 𝘣𝘢𝘭𝘢𝘯𝘤𝘦𝘥 𝘢𝘯𝘥 𝘱𝘦𝘢𝘤𝘦𝘧𝘶𝘭 𝘔𝘪𝘴𝘢𝘮𝘪𝘴 𝘖𝘳𝘪𝘦𝘯𝘵𝘢𝘭 𝘶𝘯𝘥𝘦𝘳 𝘢 𝘳𝘦𝘴𝘱𝘰𝘯𝘴𝘪𝘷𝘦 𝘢𝘯𝘥 𝘢𝘤𝘤𝘰𝘶𝘯𝘵𝘢𝘣𝘭𝘦 𝘨𝘰𝘷𝘦𝘳𝘯𝘢𝘯𝘤𝘦.</h4>
     <br>
-    <h3><b>MISSION</b></h3>
+    <h3><b><i class="fa fa-dot-circle-o" aria-hidden="true"></i> MISSION</b></h3>
     <h4>𝘞𝘦 𝘴𝘩𝘢𝘭𝘭 𝘴𝘶𝘴𝘵𝘢𝘪𝘯 𝘰𝘶𝘳 𝘥𝘦𝘭𝘪𝘷𝘦𝘳𝘺 𝘰𝘧 𝘴𝘦𝘳𝘷𝘪𝘤𝘦𝘴 𝘵𝘰 𝘵𝘩𝘦 𝘧𝘶𝘭𝘭𝘦𝘴𝘵 𝘰𝘧 𝘰𝘶𝘳 𝘢𝘣𝘪𝘭𝘪𝘵𝘪𝘦𝘴, 𝘩𝘢𝘳𝘯𝘦𝘴𝘴𝘪𝘯𝘨 𝘰𝘶𝘳 𝘱𝘰𝘵𝘦𝘯𝘵𝘪𝘢𝘭𝘴, 𝘢𝘯𝘥 𝘣𝘶𝘪𝘭𝘥𝘪𝘯𝘨 𝘮𝘰𝘳𝘦 𝘮𝘦𝘢𝘯𝘪𝘯𝘨𝘧𝘶𝘭 𝘵𝘦𝘢𝘮𝘸𝘰𝘳𝘬; 𝘞𝘦 𝘸𝘪𝘭𝘭 𝘩𝘰𝘭𝘥 𝘢𝘯𝘥 𝘱𝘳𝘰𝘮𝘰𝘵𝘦 𝘢𝘵 𝘢𝘭𝘭 𝘵𝘪𝘮𝘦𝘴 𝘵𝘩𝘦 𝘱𝘳𝘪𝘯𝘤𝘪𝘱𝘭𝘦s.</h4>
       </div>
       </div>
