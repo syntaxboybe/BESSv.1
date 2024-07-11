@@ -75,7 +75,7 @@
 <div class="breadcrumb justify-content-center text-center" style="margin-top: 10px; background-color: #3c8dbc; color: white; ">
     <h3><b><i class="fa fa-share-square-o" aria-hidden="true"></i> Social Media Accounts</b></h3>
       <h4><i class="fa fa-facebook-square aria-hidden="true" style="margin-top: 10px;"></i> <a href="https://web.facebook.com/profile.php?id=61556262989223" style="color: white; text-decoration: underline;"> Barangay Poblacion Naawan</a></h4>
-      <h4><i class="fa fa-envelope" aria-hidden="true" style="margin-top: 10px;"></i> <a href="https://web.facebook.com/profile.php?id=61556262989223" style="color: white; text-decoration: underline;"> brgy.poblacion.naawan@gmail.com</a></h4>
+      <h4><i class="fa fa-envelope" aria-hidden="true" style="margin-top: 10px;"></i> <a href="" style="color: white; text-decoration: underline;"> brgy.poblacion.naawan@gmail.com</a></h4>
     </div>
   </body>
 
