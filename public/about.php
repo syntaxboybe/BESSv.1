@@ -67,7 +67,7 @@
         
 <div class="breadcrumb justify-content-center text-center" style="margin-top: 10px; background-color: #3c8dbc; color: white; ">
     <h3><b><i class="fa fa-phone-square" aria-hidden="true"></i> Barangay Contact Hotlines</b></h3>
-      <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> BARANGAY | Poblacion - 09361174734/09057198345</h4>
+      <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> BARANGAY | Poblacion - 09361174734 / 09057198345</h4>
       <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> BFP | Naawan - 09672446008</h4>
       <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> MDRRMO | Naawan - 09620408084</h4>
       <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> PNP | Naawan - 09985986963</h4>
