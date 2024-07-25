@@ -78,7 +78,7 @@
     <h3><b><i class="fa fa-handshake-o" aria-hidden="true"></i> Services Offered</b></h3>
             <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Issuance for Permit</h4>
             <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Issuance for Clearance</h4>
-            <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Filing for Clearance</h4>
+            <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Filing for Blotter</h4>
             
             <!--SMA-->
 <div class="breadcrumb justify-content-center text-center" style="margin-top: 10px; background-color: #3c8dbc; color: white; ">
