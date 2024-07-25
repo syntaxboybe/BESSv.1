@@ -60,11 +60,12 @@
 
 <div class="wrapper row-offcanvas row-offcanvas-left">
 
-
+         <!--ABOUT-->
 <div class="breadcrumb justify-content-center text-center" style="background-color: #3c8dbc; color: white;">  
     <h3><b><i class="fa fa-info-circle" aria-hidden="true"></i> About the System</b></h3>
       <h4>The capstone project, entitled “𝘉𝘢𝘳𝘢𝘯𝘨𝘢𝘺 𝘌-𝘴𝘦𝘳𝘷𝘪𝘤𝘦 𝘚𝘺𝘴𝘵𝘦𝘮” is a system purposely designed and developed for barangay use. It will automate the day-to-day operations and transactions in the barangay. The said project will improve the services of the barangay and the overall experience of the residents.</h4>
-        
+         
+        <!--HOTLINES-->
 <div class="breadcrumb justify-content-center text-center" style="margin-top: 10px; background-color: #3c8dbc; color: white; ">
     <h3><b><i class="fa fa-phone-square" aria-hidden="true"></i> Barangay Contact Hotlines</b></h3>
       <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> BARANGAY | Poblacion - 09361174734 / 09057198345</h4>
@@ -72,6 +73,14 @@
       <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> MDRRMO | Naawan - 09620408084</h4>
       <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> PNP | Naawan - 09985986963</h4>
           
+          <!--SERVICES-->
+<div class="breadcrumb justify-content-center text-center" style="margin-top: 10px; background-color: #3c8dbc; color: white; ">
+    <h3><b><i class="fa fa-handshake-o" aria-hidden="true"></i> Services Offered</b></h3>
+            <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Issuance for Permit</h4>
+            <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Issuance for Clearance</h4>
+            <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Filing for Clearance</h4>
+            
+            <!--SMA-->
 <div class="breadcrumb justify-content-center text-center" style="margin-top: 10px; background-color: #3c8dbc; color: white; ">
     <h3><b><i class="fa fa-share-square-o" aria-hidden="true"></i> Social Media Account</b></h3>
       <h4><i class="fa fa-facebook-square aria-hidden="true" style="margin-top: 10px;"></i> <a href="https://web.facebook.com/profile.php?id=61556262989223" style="color: white; text-decoration: underline;"> Barangay Poblacion Naawan</a></h4>
