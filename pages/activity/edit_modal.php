@@ -1,4 +1,6 @@
-<?php echo '<div id="editModal'.$row['id'].'" class="modal fade">
+<?php
+
+echo '<div id="editModal'.$row['id'].'" class="modal fade">
 <form method="post">
   <div class="modal-dialog modal-sm" style="width:300px !important;">
     <div class="modal-content">
@@ -19,7 +21,7 @@
                     <input name="txt_edit_act" class="form-control input-sm" type="text" value="'.$row['activity'].'" />
                 </div>
                 <div class="form-group">
-                    <label>Description : </label>
+                    <label>Description, Time and Venue: </label>
                     <textarea name="txt_edit_desc" class="form-control input-sm">'.$row['description'].'</textarea>
                 </div>
             </div>
@@ -32,4 +34,5 @@
     </div>
   </div>
 </form>
-</div>';?>
+</div>';
+

@@ -3,19 +3,16 @@
 
     <?php
     session_start();
-    if(!isset($_SESSION['role']))
-    {
-        header("Location: ../../login.php"); 
-    }
-    else
-    {
-    ob_start();
-    include('../head_css.php'); ?>
+    if(!isset($_SESSION['role'])) {
+        header("Location: ../../login.php");
+    } else {
+        ob_start();
+        include('../head_css.php'); ?>
     <body class="skin-black">
         <!-- header logo: style can be found in header.less -->
-        <?php 
-        
-        include "../connection.php";
+        <?php
+
+            include "../connection.php";
         ?>
         <?php include('../header.php'); ?>
 
@@ -28,7 +25,9 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Announcement Records
+                        Announcement Records as of <?php echo date('F d, Y');
+        echo " at ".date('h:i A');?>
+
                     </h1>
                     
                 </section>
@@ -40,22 +39,20 @@
                             <div class="box">
                                 <div class="box-header">
                                     <div style="padding:10px;">
-                                        <?php 
-                                            if(!isset($_SESSION['resident']))
-                                            {
-                                        ?>
+                                        <?php
+                            if(!isset($_SESSION['resident'])) {
+                                ?>
 
                                                 <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-calendar" aria-hidden="true"></i> Post Activity</button>  
                                                 
-                                                <?php 
-                                                    if(!isset($_SESSION['staff']))
-                                                    {
+                                                <?php
+                                            if(!isset($_SESSION['staff'])) {
                                                 ?>
                                                 
                                                 <?php
-                                                    }
                                             }
-                                                ?>
+                            }
+        ?>
                                 
                                     </div>                                
                                 </div><!-- /.box-header -->
@@ -64,14 +61,13 @@
                                     <table id="table" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <?php 
-                                                if((!isset($_SESSION['staff'])) && (!isset($_SESSION['resident'])))
-                                                {
-                                                ?>
+                                                <?php
+        if((!isset($_SESSION['staff'])) && (!isset($_SESSION['resident']))) {
+            ?>
                                                 <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
                                                 <?php
-                                                    }
-                                                ?>
+        }
+        ?>
                                                 <th>Date of Activity</th>
                                                 <th>Activity</th>
                                                 <th>Description</th>
@@ -80,12 +76,10 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            if($_SESSION['role'] == "Administrator")
-                                            {   
+                                            if($_SESSION['role'] == "Administrator") {
 
                                                 $squery = mysqli_query($con, "select * from tblactivity");
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
+                                                while($row = mysqli_fetch_array($squery)) {
                                                     echo '
                                                     <tr>
                                                         <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['id'].'" /></td>
@@ -103,11 +97,9 @@
                                                     include "view_modal.php";
                                                 }
 
-                                            }
-                                            elseif(isset($_SESSION['resident'])){
+                                            } elseif(isset($_SESSION['resident'])) {
                                                 $squery = mysqli_query($con, "select * from tblactivity");
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
+                                                while($row = mysqli_fetch_array($squery)) {
                                                     echo '
                                                     <tr>
                                                         <td>'.$row['dateofactivity'].'</td>
@@ -119,11 +111,9 @@
 
                                                     include "view_modal.php";
                                                 }
-                                            }
-                                            else{
+                                            } else {
                                                 $squery = mysqli_query($con, "select * from tblactivity");
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
+                                                while($row = mysqli_fetch_array($squery)) {
                                                     echo '
                                                     <tr>
                                                         <td>'.$row['dateofactivity'].'</td>
@@ -140,7 +130,7 @@
                                                     include "view_modal.php";
                                                 }
                                             }
-                                            ?>
+        ?>
                                         </tbody>
                                     </table>
 
@@ -169,7 +159,7 @@
         </div><!-- ./wrapper -->
         <!-- jQuery 2.0.2 -->
         <?php }
-        include "../footer.php"; ?>
+    include "../footer.php"; ?>
 <script type="text/javascript">
 
 var select_all = document.getElementById("cbxMainphoto"); //select all checkbox
@@ -197,9 +187,8 @@ for (var i = 0; i < checkboxes.length; i++) {
 }
 
     <?php
-    if($_SESSION['role'] == "Administrator")
-    {
-    ?>
+    if($_SESSION['role'] == "Administrator") {
+        ?>
         $(function() {
             $("#table").dataTable({
                "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 0,4 ] } ],"aaSorting": []
@@ -207,10 +196,8 @@ for (var i = 0; i < checkboxes.length; i++) {
             $(".select2").select2();
         });
     <?php
-    }
-    elseif(isset($_SESSION['resident']))
-    {
-    ?>
+    } elseif(isset($_SESSION['resident'])) {
+        ?>
         $(function() {
             $("#table").dataTable({
                "aoColumnDefs": [ { "bSortable": false } ],"aaSorting": []
@@ -218,9 +205,8 @@ for (var i = 0; i < checkboxes.length; i++) {
             $(".select2").select2();
         });
     <?php
-    }
-    else{
-    ?>
+    } else {
+        ?>
         $(function() {
             $("#table").dataTable({
                "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 4 ] } ],"aaSorting": []

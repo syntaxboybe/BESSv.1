@@ -20,11 +20,11 @@
                                     <input name="txt_act" class="form-control input-sm" type="text" placeholder="Activity Name"/>
                                 </div>
                                 <div class="form-group">
-                                    <label>Description:</label>
+                                    <label>Description, Time and Venue:</label>
                                     <textarea name="txt_desc" class="form-control input-sm" placeholder="Description"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label">Image:</label>
+                                    <label class="control-label">Image Poster:</label>
                                     <input name="files[]" class="form-control input-sm" type="file" multiple/>
                                 </div>
                             </div>

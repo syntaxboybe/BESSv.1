@@ -3,19 +3,16 @@
 
     <?php
     session_start();
-    if(!isset($_SESSION['role']))
-    {
-        header("Location: ../../login.php"); 
-    }
-    else
-    {
-    ob_start();
-    include('../head_css.php'); ?>
+    if(!isset($_SESSION['role'])) {
+        header("Location: ../../login.php");
+    } else {
+        ob_start();
+        include('../head_css.php'); ?>
     <body class="skin-black">
         <!-- header logo: style can be found in header.less -->
-        <?php 
-        
-        include "../connection.php";
+        <?php
+
+            include "../connection.php";
         ?>
         <?php include('../header.php'); ?>
 
@@ -27,19 +24,17 @@
             <aside class="right-side">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>
-                        Permit Records
-                    </h1>
-                    
+                    <h1>Permit Records</h1>
+                    <h5><i class="fa fa-exclamation-circle" aria-hidden="true" style="margin-top: 3px;"></i> REMINDERS! Please comply all the requirements before requesting</h5> 
+
                 </section>
 
                 <!-- Main content -->
                 <section class="content">
 
                     <?php
-                    if(($_SESSION['role'] == "Administrator") || isset($_SESSION['staff']))
-                    {
-                    ?>
+                    if(($_SESSION['role'] == "Administrator") || isset($_SESSION['staff'])) {
+                        ?>
 
                     <div class="row">
                         <!-- left column -->
@@ -48,14 +43,13 @@
                                     <div style="padding:10px;">
                                         
                                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus" aria-hidden="true"></i> Add Permit</button>  
-                                        <?php 
-                                            if(!isset($_SESSION['staff']))
-                                            {
-                                        ?>
+                                        <?php
+                                                if(!isset($_SESSION['staff'])) {
+                                                    ?>
                                         <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button> 
                                         <?php
-                                            }
-                                        ?>
+                                                }
+                        ?>
                                 
                                     </div>                                
                                 </div><!-- /.box-header -->
@@ -71,14 +65,13 @@
                                     <table id="table" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <?php 
-                                                if(!isset($_SESSION['staff']))
-                                                {
-                                                ?>
+                                                <?php
+                                if(!isset($_SESSION['staff'])) {
+                                    ?>
                                                 <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
                                                 <?php
-                                                    }
-                                                ?>
+                                }
+                        ?>
                                                 <th>Resident</th>
                                                 <th>Business Name</th>
                                                 <th>Business Address</th>
@@ -91,12 +84,10 @@
                                         <tbody>
                                             <?php
 
-                                            if(!isset($_SESSION['staff']))
-                                            {
+                                            if(!isset($_SESSION['staff'])) {
 
                                                 $squery = mysqli_query($con, "SELECT *,CONCAT(r.lname, ', ' ,r.fname, ' ' ,r.mname) as residentname,p.id as pid FROM tblpermit p left join tblresident r on r.id = p.residentid where status = 'Approved'") or die('Error: ' . mysqli_error($con));
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
+                                                while($row = mysqli_fetch_array($squery)) {
                                                     echo '
                                                     <tr>
                                                         <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['pid'].'" /></td>
@@ -105,18 +96,16 @@
                                                         <td>'.$row['businessAddress'].'</td>
                                                         <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['orNo'].'</td>
-                                                        <td>₱ '.number_format($row['samount'],2).'</td>
+                                                        <td>₱ '.number_format($row['samount'], 2).'</td>
                                                         <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-eye" aria-hidden="true"></i> View</button></td>
                                                     </tr>
                                                     ';
 
                                                     include "edit_modal.php";
                                                 }
-                                            }
-                                            else{
+                                            } else {
                                                 $squery = mysqli_query($con, "SELECT *,CONCAT(r.lname, ', ' ,r.fname, ' ' ,r.mname) as residentname,p.id as pid FROM tblpermit p left join tblresident r on r.id = p.residentid where status = 'Approved'") or die('Error: ' . mysqli_error($con));
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
+                                                while($row = mysqli_fetch_array($squery)) {
                                                     echo '
                                                     <tr>
                                                         <td>'.$row['residentname'].'</td>
@@ -124,7 +113,7 @@
                                                         <td>'.$row['businessAddress'].'</td>
                                                         <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['orNo'].'</td>
-                                                        <td>₱ '.number_format($row['samount'],2).'</td>
+                                                        <td>₱ '.number_format($row['samount'], 2).'</td>
                                                         <td><button class="btn btn-primary btn-sm" data-target="#editModal'.$row['pid'].'" data-toggle="modal"><i class="fa fa-eye" aria-hidden="true"></i> View</button></td>
                                                     </tr>
                                                     ';
@@ -132,7 +121,7 @@
                                                     include "edit_modal.php";
                                                 }
                                             }
-                                            ?>
+                        ?>
                                         </tbody>
                                     </table>
                                     </div>
@@ -141,14 +130,13 @@
                                     <table id="table1" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <?php 
-                                                if(!isset($_SESSION['staff']))
-                                                {
-                                                ?>
+                                                <?php
+                            if(!isset($_SESSION['staff'])) {
+                                ?>
                                                 <th style="width: 20px !important;"><input type="checkbox" name="chk_delete[]" class="cbxMain" onchange="checkMain(this)"/></th>
                                                 <?php
-                                                    }
-                                                ?>
+                            }
+                        ?>
                                                 <th>Resident</th>
                                                 <th>Business Name</th>
                                                 <th>Business Address</th>
@@ -158,12 +146,10 @@
                                         <tbody>
                                             <?php
 
-                                            if(!isset($_SESSION['staff']))
-                                            {
+                                            if(!isset($_SESSION['staff'])) {
 
                                                 $squery = mysqli_query($con, "SELECT *,CONCAT(r.lname, ', ' ,r.fname, ' ' ,r.mname) as residentname,p.id as pid FROM tblpermit p left join tblresident r on r.id = p.residentid where status = 'Disapproved' ") or die('Error: ' . mysqli_error($con));
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
+                                                while($row = mysqli_fetch_array($squery)) {
                                                     echo '
                                                     <tr>
                                                         <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['pid'].'" /></td>
@@ -175,11 +161,9 @@
                                                     ';
 
                                                 }
-                                            }
-                                            else{
+                                            } else {
                                                 $squery = mysqli_query($con, "SELECT *,CONCAT(r.lname, ', ' ,r.fname, ' ' ,r.mname) as residentname,p.id as pid FROM tblpermit p left join tblresident r on r.id = p.residentid where status = 'Disapproved' ") or die('Error: ' . mysqli_error($con));
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
+                                                while($row = mysqli_fetch_array($squery)) {
                                                     echo '
                                                     <tr>
                                                         <td>'.$row['residentname'].'</td>
@@ -191,7 +175,7 @@
 
                                                 }
                                             }
-                                            ?>
+                        ?>
                                         </tbody>
                                     </table>
                                     </div>
@@ -219,10 +203,8 @@
                     </div>   <!-- /.row -->
 
                     <?php
-                    }
-                    elseif($_SESSION['role'] == "Barangay Captain")
-                    {
-                    ?>
+                    } elseif($_SESSION['role'] == "Barangay Captain") {
+                        ?>
 
                     <div class="row">
                         <!-- left column -->
@@ -248,10 +230,9 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $squery = mysqli_query($con, "SELECT *,CONCAT(r.lname, ', ' ,r.fname, ' ' ,r.mname) as residentname,p.id as pid FROM tblpermit p left join tblresident r on r.id = p.residentid where status = 'New'") or die('Error: ' . mysqli_error($con));
-                                            while($row = mysqli_fetch_array($squery))
-                                            {
-                                                echo '
+                                                $squery = mysqli_query($con, "SELECT *,CONCAT(r.lname, ', ' ,r.fname, ' ' ,r.mname) as residentname,p.id as pid FROM tblpermit p left join tblresident r on r.id = p.residentid where status = 'New'") or die('Error: ' . mysqli_error($con));
+                        while($row = mysqli_fetch_array($squery)) {
+                            echo '
                                                 <tr>
                                                     <td><input type="checkbox" name="chk_delete[]" class="chk_delete" value="'.$row['pid'].'" /></td>
                                                     <td>'.$row['residentname'].'</td>
@@ -264,10 +245,10 @@
                                                     </td>
                                                 </tr>
                                                 ';
-                                                include "approve_modal.php";
-                                                include "disapprove_modal.php";
-                                            }
-                                            ?>
+                            include "approve_modal.php";
+                            include "disapprove_modal.php";
+                        }
+                        ?>
                                         </tbody>
                                     </table>
                                     
@@ -282,11 +263,9 @@
 
 
                     </div>   <!-- /.row -->
-                    <?php 
-                    }
-                    else
-                    {
-                    ?>
+                    <?php
+                    } else {
+                        ?>
 
                     <div class="row">
                         <!-- left column -->
@@ -318,28 +297,25 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $squery = mysqli_query($con, "SELECT * FROM tblpermit p left join tblresident r on r.id = p.residentid where r.id = ".$_SESSION['userid']." and status = 'New' ") or die('Error: ' . mysqli_error($con));
-                                            if(mysqli_num_rows($squery) > 0)
-                                            {
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
-                                                    echo '
+                                                $squery = mysqli_query($con, "SELECT * FROM tblpermit p left join tblresident r on r.id = p.residentid where r.id = ".$_SESSION['userid']." and status = 'New' ") or die('Error: ' . mysqli_error($con));
+                        if(mysqli_num_rows($squery) > 0) {
+                            while($row = mysqli_fetch_array($squery)) {
+                                echo '
                                                     <tr>
                                                         <td>'.$row['businessName'].'</td>
                                                         <td>'.$row['businessAddress'].'</td>
                                                         <td>'.$row['typeOfBusiness'].'</td>
                                                     </tr>
                                                     ';
-                                                }
-                                            }
-                                            else{
-                                                echo '
+                            }
+                        } else {
+                            echo '
                                                 <tr>
                                                 <td colspan="5" style="text-align: center;">No record found</td>
                                                 </tr>
                                                 ';
-                                            }
-                                            ?>
+                        }
+                        ?>
                                         </tbody>
                                     </table>
                                     </div>
@@ -357,30 +333,27 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $squery = mysqli_query($con, "SELECT * FROM tblpermit p left join tblresident r on r.id = p.residentid where r.id = ".$_SESSION['userid']." and status = 'Approved'  ") or die('Error: ' . mysqli_error($con));
-                                            if(mysqli_num_rows($squery) > 0)
-                                            {
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
-                                                    echo '
+                        $squery = mysqli_query($con, "SELECT * FROM tblpermit p left join tblresident r on r.id = p.residentid where r.id = ".$_SESSION['userid']." and status = 'Approved'  ") or die('Error: ' . mysqli_error($con));
+                        if(mysqli_num_rows($squery) > 0) {
+                            while($row = mysqli_fetch_array($squery)) {
+                                echo '
                                                     <tr>
                                                         <td>'.$row['businessName'].'</td>
                                                         <td>'.$row['businessAddress'].'</td>
                                                         <td>'.$row['typeOfBusiness'].'</td>
                                                         <td>'.$row['orNo'].'</td>
-                                                        <td>₱ '.number_format($row['samount'],2).'</td>
+                                                        <td>₱ '.number_format($row['samount'], 2).'</td>
                                                     </tr>
                                                     ';
-                                                }
-                                            }
-                                            else{
-                                                echo '
+                            }
+                        } else {
+                            echo '
                                                 <tr>
                                                 <td colspan="5" style="text-align: center;">No record found</td>
                                                 </tr>
                                                 ';
-                                            }
-                                            ?>
+                        }
+                        ?>
                                         </tbody>
                                     </table>
                                     </div>
@@ -396,28 +369,25 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $squery = mysqli_query($con, "SELECT * FROM tblpermit p left join tblresident r on r.id = p.residentid where r.id = ".$_SESSION['userid']." and status = 'Disapproved'  ") or die('Error: ' . mysqli_error($con));
-                                            if(mysqli_num_rows($squery) > 0)
-                                            {
-                                                while($row = mysqli_fetch_array($squery))
-                                                {
-                                                    echo '
+                        $squery = mysqli_query($con, "SELECT * FROM tblpermit p left join tblresident r on r.id = p.residentid where r.id = ".$_SESSION['userid']." and status = 'Disapproved'  ") or die('Error: ' . mysqli_error($con));
+                        if(mysqli_num_rows($squery) > 0) {
+                            while($row = mysqli_fetch_array($squery)) {
+                                echo '
                                                     <tr>
                                                         <td>'.$row['businessName'].'</td>
                                                         <td>'.$row['businessAddress'].'</td>
                                                         <td>'.$row['typeOfBusiness'].'</td>
                                                     </tr>
                                                     ';
-                                                }
-                                            }
-                                            else{
-                                                echo '
+                            }
+                        } else {
+                            echo '
                                                 <tr>
                                                 <td colspan="5" style="text-align: center;">No record found</td>
                                                 </tr>
                                                 ';
-                                            }
-                                            ?>
+                        }
+                        ?>
                                         </tbody>
                                     </table>
                                     </div>
@@ -435,18 +405,17 @@
 
                     <?php
                     }
-                    ?>
+        ?>
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
         <!-- jQuery 2.0.2 -->
         <?php }
-        include "../footer.php"; ?>
+    include "../footer.php"; ?>
 <script type="text/javascript">
-    <?php 
-    if(!isset($_SESSION['staff']))
-    {
-    ?>
+    <?php
+    if(!isset($_SESSION['staff'])) {
+        ?>
         $(function() {
             $("#table").dataTable({
                "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 0,7 ] } ],"aaSorting": []
@@ -457,10 +426,8 @@
             $(".select2").select2();
         });
     <?php
-    }
-    else
-    {
-    ?>
+    } else {
+        ?>
         $(function() {
             $("#table").dataTable({
                "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 6 ] } ],"aaSorting": []
