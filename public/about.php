@@ -62,7 +62,7 @@
          
         <!--HOTLINES-->
 <div class="breadcrumb justify-content-center text-center" style="margin-top: 0px; background-color: #3c8dbc; color: white; ">
-    <h3><b><i class="fa fa-phone-square" aria-hidden="true"></i> Barangay Contact Hotlines</b></h3>
+    <h3><b><i class="fa fa-phone-square" aria-hidden="true"></i> BARANGAY CONTACT HOTLINES</b></h3>
       <h5><i class="fa fa-exclamation-circle" aria-hidden="true" style="margin-top: 3px;"></i> For emergencies please call</h5> 
       <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> BARANGAY | Poblacion - 09361174734 / 09057198345</h4>
       <h4><i class="fa fa-mobile" aria-hidden="true" style="margin-top: 10px;"></i> BFP | Naawan - 09672446008</h4>
@@ -71,7 +71,7 @@
           
           <!--SERVICES-->
 <div class="breadcrumb justify-content-center text-center" style="margin-top: 0px; background-color: #3c8dbc; color: white; ">
-            <h3><b><i class="fa fa-handshake-o" aria-hidden="true"></i> Services Offered</b></h3>
+            <h3><b><i class="fa fa-handshake-o" aria-hidden="true"></i> SERVICES OFFERED</b></h3>
             <h5><i class="fa fa-exclamation-circle" aria-hidden="true" style="margin-top: 3px;"></i> REMINDERS! Please comply all the requirements before requesting</h5> 
             
             <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Issuance for Permit</h4>
@@ -85,7 +85,7 @@
             
             <!--SMA-->
 <div class="breadcrumb justify-content-center text-center" style="margin-top: 0px; background-color: #3c8dbc; color: white; ">
-    <h3><b><i class="fa fa-share-square-o" aria-hidden="true"></i> Social Media Account</b></h3>
+    <h3><b><i class="fa fa-share-square-o" aria-hidden="true"></i> SOCIAL MEDIA ACCOUNT</b></h3>
       <h4><i class="fa fa-facebook-square aria-hidden="true" style="margin-top: 10px;"></i> <a href="https://web.facebook.com/profile.php?id=61556262989223" style="color: white; text-decoration: underline;"> Barangay Poblacion Naawan</a></h4>
      <!-- <h4><i class="fa fa-envelope" aria-hidden="true" style="margin-top: 10px;"></i> <a href="" style="color: white; text-decoration: underline;"> brgy.poblacion.naawan@gmail.com</a></h4> -->
     </div>
