@@ -75,13 +75,13 @@
             <h5><i class="fa fa-exclamation-circle" aria-hidden="true" style="margin-top: 3px;"></i> REMINDERS! Please comply all the requirements before requesting</h5> 
             
             <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Issuance for Permit</h4>
-            <h5><i class="fa fa-thumb-tack " aria-hidden="true" style="margin-top: 3px;"></i> REQUIREMENTS: Purok Clearance, Tax, Sample</h5> 
+            <h5><i class="fa fa-thumb-tack " aria-hidden="true" style="margin-top: 3px;"></i> REQUIREMENTS: Barangay Clearance, Barangay Certificate, Business Papers, Payment Fee</h5> 
             
             <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Issuance for Clearance</h4> 
-            <h5><i class="fa fa-thumb-tack" aria-hidden="true" style="margin-top: 3px;"></i> REQUIREMENTS: test,dadwdw, dwadfa, wafd, </h5> 
+            <h5><i class="fa fa-thumb-tack" aria-hidden="true" style="margin-top: 3px;"></i> REQUIREMENTS: Application Form, Purok Clearance, Payment Fee</h5> 
             
             <h4><i class="fa fa-file-text" aria-hidden="true" style="margin-top: 10px;"></i> Filing for Blotter</h4>
-            <h5><i class="fa fa-thumb-tack" aria-hidden="true" style="margin-top: 3px;"></i> REQUIREMENTS: test, tesad, adasdaw ,adadw </h5> 
+            <h5><i class="fa fa-thumb-tack" aria-hidden="true" style="margin-top: 3px;"></i> REQUIREMENTS: File a Report Complain</h5> 
             
             <!--SMA-->
 <div class="breadcrumb justify-content-center text-center" style="margin-top: 0px; background-color: #3c8dbc; color: white; ">
