@@ -1,51 +1,54 @@
-# ⚒ LIST OF FUNCTIONALITIES(Updated List)
+LIST OF FUNCTIONALITIES - END USERS
 
-# 👨‍🔧 SYSTEM ADMIN (system personnel/secretary)
+[SYSTEM ADMIN - system personnel/secretary]
 
-⚙️ view dashboard
+├── view dashboard
 
-⚙️ create account for resident and employee/staff one time.
+├── create account for resident and employee/staff one time.
 
-⚙️ profiling(resident information)
+├── profiling(resident information)
 
-⚙️ reset password accounts, settings, and configurations
+├── reset password accounts, settings, and configurations
 
-⚙️ post barangay activities
+├── post barangay activities
 
-⚙️ generate blotter
+└── generate blotter
 
-# 👫 RESIDENT (Citizen)
 
-⚙️ use account
+[RESIDENT - citizen]
 
-⚙️ request certificates
+├── use account
 
-⚙️ track progress
+├── request certificates
 
-⚙️ view barangay activities
+├── track progress
 
-# 👩‍⚖️ STAFF (secretary/staff-available)
+└── view barangay activities
 
-⚙️ accept requests such as certification and blotter
 
-⚙️ accept payments through on site
+[STAFF - secretary]
 
-⚙️ profiling(resident information)
+├── accept requests such as certification and blotter
 
-⚙️ add resident profile
+├── accept payments through on site
 
-⚙️ update resident accounts
+├── profiling(resident information)
 
-⚙️ view request
+├── add resident profile
 
-⚙️ generate request
+├── update resident accounts
 
-⚙️ generate blotter
+├── view request
 
-⚙️ post barangay activities
+├── generate request
 
-# 👨‍⚖️ BARANGAY LEADER (captain)
+├── generate blotter
 
-⚙️ view incoming request
+└── post barangay activities
 
-⚙️ approval or disapproval of request
+
+[BARANGAY CHAIRMAN]
+
+├── view incoming request
+
+└── approval or disapproval of request
