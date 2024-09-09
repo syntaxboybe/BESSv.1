@@ -25,7 +25,7 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Announcement Records as of <?php echo date('F d, Y');
+                        Announcement as of <?php echo date('F d, Y');
         echo " at ".date('h:i A');?>
 
                     </h1>

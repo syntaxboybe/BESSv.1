@@ -5,7 +5,7 @@ session_start();
 ?>
     <head>
         <meta charset="UTF-8">
-        <title>Barangay E-service System</title>
+        <title>Barangay E-Service System</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@ session_start();
                 <img src="../../img/poblacionlogo.png" style="height:150px;"/>
               <h3 class="panel-title">
                 <strong>
-                    Barangay E-service System
+                    Barangay E-Service System
                 </strong>
               </h3>
             </div>
@@ -51,32 +51,28 @@ session_start();
 
       <?php
         include "../connection.php";
-        if(isset($_POST['btn_login']))
-        { 
-            $username = $_POST['txt_username'];
-            $password = $_POST['txt_password'];
+if(isset($_POST['btn_login'])) {
+    $username = $_POST['txt_username'];
+    $password = $_POST['txt_password'];
 
-            $user = mysqli_query($con, "SELECT * from tblzone where username = '$username' and password = '$password' ");
-            $numrow_user = mysqli_num_rows($user);
+    $user = mysqli_query($con, "SELECT * from tblzone where username = '$username' and password = '$password' ");
+    $numrow_user = mysqli_num_rows($user);
 
-            if($numrow_user > 0)
-            {
-                while($row = mysqli_fetch_array($user)){
-                  $_SESSION['role'] = "Barangay Captain";
-                  $_SESSION['userid'] = $row['id'];
-                  $_SESSION['username'] = $row['username'];
-                }    
-                header ('location: ../permit/permit.php');
-            }
-            else
-            {
-              echo '<script type="text/javascript">document.getElementById("error").innerHTML = "Invalid Account";</script>';
-               
-            }
-             
+    if($numrow_user > 0) {
+        while($row = mysqli_fetch_array($user)) {
+            $_SESSION['role'] = "Barangay Captain";
+            $_SESSION['userid'] = $row['id'];
+            $_SESSION['username'] = $row['username'];
         }
-        
-      ?>
+        header('location: ../permit/permit.php');
+    } else {
+        echo '<script type="text/javascript">document.getElementById("error").innerHTML = "Invalid Account";</script>';
+
+    }
+
+}
+
+?>
 
     </body>
 </html>
